@@ -1,0 +1,7 @@
+$('.submenu').stop(true,true).slideUp(250);
+
+currentid = 0;
+		
+		if (currentid != $(this).prop('id')) {
+			$('.submenu').stop(true,true).slideUp(250);
+		};

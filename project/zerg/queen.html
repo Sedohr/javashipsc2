@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="../terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Zerg Queen</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/zerg/queen/queen.png" /> <img class="portrait" src="../images/zerg/queen/queenface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 175<br />
+							<b><div class="hpregen">Health Regen:</b> 0.2734  per second</div><br />
+							<b>Armor:</b> 1<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 25/200</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0.5625 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>-Attack 1-</b><br />
+							<b>Name:</b> Claws<br />
+							<b>Damage:</b> 4<br />
+							<b>Attacks:</b> 2<br />
+							<b>Cooldown:</b> 1<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 5<br />
+							<br />
+							<b>-Attack 2-</b><br />
+							<b>Name:</b> Acid Spine<br />
+							<b>Damage:</b> 9<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 1<br />
+							<b>Targets:</b> Air only<br />
+							<b>Attack Range:</b> 7
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Missile Weapon Upgrades</div>
+							<b>Researched At:</b> Evolution Chamber<br />
+							<b>Requirements:</b> Level 2 requires Lair, level 3 requires Hive<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/rattack1.gif" /> Level 1</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/rattack2.gif" /> Level 2</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/rattack3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 100</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+1 | +1</td><td>+2 | +2</td><td>+3 | +3</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>5 | 10</td><td>6 | 11</td><td>7 | 12</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 0.9375<br />
+							<b>Speed on Creep:</b> 2.5003125<br />
+							<b>Acceleration:</b> 1000<br />
+							<b>Collision Radius:</b> 0.875
+						</div>
+						
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 150<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/zerg/zerggas.gif" /> 0<br />
+							<b>Supply:</b> <img src="../images/zerg/supplyzerg.gif" /> 2<br />
+							<b>Produced From:</b> Hatchery</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" />5 0<br />
+							<b>Requirements:</b> Spawning Pool
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Armor Upgrades</div>
+							<b>Researched At:</b> Evolution Chamber<br />
+							<b>Requirements:</b> Level 2 requires Lair, level 3 requires Hive<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 225</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>2</td><td>3</td><td>4</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 8<br />
+							<b>Overlord Size:</b> 2<br />
+							<b>Unit Type:</b> Biological, Psionic, Ground
+						</div>
+					</div>
+
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Spawn Larva</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/queen/spawnlarva.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 1<br />
+							<b>Cooldown:</b> <img class="timericon" src="../images/timer.gif" /> 2.5<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 40<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 25</div><br />
+							<br />
+							<b>Information:</b> This ability allows the Queen to spend 25 energy and inject a Hatchery/Lair/Hive. 40 seconds after the inject, 4 extra larva spawn from the eggs on the building.<br />
+							<br />
+							If a Hatchery/Lair/Hive has more than 19 Larva, additional larva from injects will be wasted.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Spawn Creep Tumor</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/queen/creeptumor.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 1<br />
+							<b>Radius:</b> 10<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 15<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 25</div><br />
+							<br />
+							<b>Information:</b> With this ability a Queen can spawn a Creep Tumor where creep already exists. The Creep Tumor takes 15 seconds to gestate, and will excrete creep within a radius of 10.<br />
+							<br />
+							Creep Tumors can be placed <i>anywhere</i> there is creep. This includes but is not limited to Overlord Creep, Hatchery creep, receding creep, or even enemy creep.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Transfusion</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/queen/transfuse.png" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 7<br />
+							<b>Cooldown:</b> <img class="timericon" src="../images/timer.gif" /> 1<br />
+							<b><div class="hpregen">Heal Amount:</b> 125</div><br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 25</div><br />
+							<br />
+							<b>Information:</b> Transfusion allows the Queen to heal any Biological unit or structure for 125 health.<br />
+							<br />
+							You are able to heal Zerg buildings with this, as they are considered Biological. You are also allowed to heal non Zerg allied units, assuming they are Biological.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Burrow</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/burrow.gif" /></td><td><img src="../images/minerals.gif" /> 100</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 100</td><td>Lair</td>
+								</tr>
+							</table><br />
+							<b>Cast Time:</b> <img class="timericon" src="../images/timer.gif" /> ~0.83<br />
+							<br />
+							<b>Information:</b> Upon research of burrow, most Zerg units are given the ability. Burrow times vary from unit to unit.<br />
+							<br />
+							You need a Lair to purchase burrow, but it can be researched at any Zerg production structure (Hatchery, Lair, or Hive).<br />
+							<br />
+							Burrowed units are invisible unless a detector comes into range or a spell that reveals burrowed units hits them.<br />
+							<br />
+							Burrow is useful for setting up traps or flanks against opponents without detection<br />
+							<br />
+							A Zerg player can Burrow to try and save units that would otherwise not make an escape if the opponent does not have detection.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Unburrow</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/unburrow.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Comes with Burrow</td>
+								</tr>
+							</table><br />
+							<b>Cast Time:</b> <img class="timericon" src="../images/timer.gif" /> ~1<br />
+							<br />
+							<b>Information:</b> Unburrow is the second part that comes with the research of Burrow. It allows you to bring Burrowed units back up. Unburrow times vary from unit to unit.<br />
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+						
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Original Queen</li>
+							<li id="loretab2">New/Evolved Queen</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />The queen was derived from the Arachnis brood-keeper. It possessed numerous tentacles, a sinuous head, and a stretched skin membrane. As with the overlords, queens were subordinated to the cerebrates to help administrate the Swarm. Queens usually stayed near the hives where they oversaw maturing zerg and drone activities.<br />
+						<br />
+						On the battlefield, one of the queen's primary functions was to implant parasites in its enemies. Able to be launched from a distance, a tiny, remora-like parasite attached itself to the target, 'bonding' with it should the target be organic. The parasite allowed higher zerg strains to see whatever the target sees and at the time of its use in the Koprulu Sector, could not be removed without killing its host. The parasite could also provide a link for the zerg to "talk" to the host.<br />
+						<br />
+						With the arrival of the United Earth Directorate in the Koprulu Sector however and the introduction of nano-conveyed anesthetic and attenuated laser technology they brought with them, the parasites could be safely removed if detected by medics using the Restoration ability. However, by 2503 at least some parasites could not be detected by terran technology.<br />
+						<br />
+						The queen could also infest other creatures, causing them to expire and broodlings to emerge from them. It took time for the queen to produce these creatures, though the rate of reproduction was able to be increased through the use of gamete meiosis. In the meantime, the queen was able to spray its victims with a thick mucus, slowing them down drastically before dissolving.<br />
+						<br />
+						Most feared of the queen's abilities however, was its ability to produce parasitic bio-toxins. Once released onto a structure (usually a terran command center), these toxins quickly infested the facility, bringing the structure and those inside it under the control of the zerg. The only safeguard against this ability was that the structure had to be in a state of disrepair before the toxins can be deployed.<br />
+						<br />
+						Following the Brood War, a small number of older queens continued to exist.</p></div>
+						
+						<div class="dblorepage" id="dbloretab2"><p><br />This breed of queen came into use after the Brood War, observed as early as 2502. Sapient beings and tougher than their predecessors, these queens play a limited command role nurturing zerg nest sites. Their new morphology hints at the incorporation of terran or protoss DNA, or perhaps even the zerg-altered genes of the Queen of Blades herself. Such evolution implies a widespread change occured within the zerg hierarchy, a redistribution of power making them more difficult to combat.<br />
+						<br />
+						Queens have the advanced ability to manipulate their "offspring"; for instance, by 2503, they engineered the zergling morph to the baneling, a breed that can contain its explosive energies until just the right moment. They have also been tasked with the spawning of numerous cocoons and can lob projectiles at their enemies. In leadership roles, they oversee hives and co-ordinate lesser strains.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Queen_(StarCraft)">Original Queen Wiki</a> and <a href="http://starcraft.wikia.com/wiki/Queen_(StarCraft_II)">New Queen Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+						
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable zergtable" border="0">
+							<tr>
+								<td><a href="index.html">Zerg</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hatchery.html">Hatchery Tech</a></b></td><td><a href="drone.html">Drone</a></td><td><a href="overlord.html">Overlord</a></td><td><a href="queen.html">Queen</a></td><td><a href="zergling.html">Zergling</a></td><td><a href="baneling.html">Baneling</a></td><td><a href="roach.html">Roach</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="lair.html">Lair Tech</a></b></td><td><a href="overseer.html">Overseer</a></td><td><a href="hydralisk.html">Hydralisk</a></td><td><a href="mutalisk.html">Mutalisk</a></td><td><a href="corruptor.html">Corruptor</a></td><td><a href="infestor.html">Infestor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hive.html">Hive Tech</a></b></td><td><a href="ultralisk.html">Ultralisk</a></td><td><a href="broodlord.html">Broodlord</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b>Spawned Units</b></td><td><a href="larva.html">Larva</a></td><td><a href="changeling.html">Changeling</a></td><td><a href="infestedterran.html">Infested Terran</a></td><td><a href="broodling.html">Broodling</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hatchery.html">Hatchery Buildings</a></b></td><td><a href="extractor.html">Extractor</a></td><td><a href="spawningpool.html">Spawning Pool</a></td><td><a href="banelingnest.html">Baneling Nest</a></td><td><a href="roachwarren.html">Roach Warren</a></td><td><a href="evolutionchamber.html">Evolution Chamber</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="lair.html">Lair Buildings</a></b></td><td><a href="hydraliskden.html">Hydralisk Den</a></td><td><a href="spire.html">Spire</a></td><td><a href="infestationpit.html">Infestation Pit</a></td><td><a href="nydusnetwork.html">Nydus Network</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hive.html">Hive Buildings</a></b></td><td><a href="ultraliskcavern.html">Ultralisk Cavern</a></td><td><a href="greaterspire.html">Greater Spire</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="spinecrawler.html">Spine Crawler</a></td><td><a href="sporecrawler.html">Spore Crawler</a></td><td><a href="creeptumor.html">Creep Tumor</a></td><td><a href="nydusworm.html">Nydus Worm</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

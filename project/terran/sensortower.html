@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Terran Sensor Tower</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/sensortower/sensortower.png" /> <img class="portrait" src="../images/terran/adjutant.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 200<br />
+							<b>Armor:</b> 0 |<br />
+							2 with <img class="miniicon terranimgborder" src="../images/terran/upgrades/buildingarmor.gif" /> Building Armor<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 31.25<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 25<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 25<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> None<br />
+							<b>Damage:</b> 0<br />
+							<b>Attacks:</b> 0<br />
+							<b>Cooldown:</b> 0<br />
+							<b>Targets:</b> None<br />
+							<b>Attack Range:</b> 0
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 0<br />
+							<b>Acceleration:</b> 0<br />
+							<b>Collision Radius:</b> 0.75
+						</div>
+						<div class="sleft">
+							<div class="sheader">No Weapon Upgrades</div>
+							<b>Researched At:</b> Nowhere<br />
+							<b>Requirements:</b> Nothing<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b>Level 1</b></td><td><b>Level 2</b></td><td><b>Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 125<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 100<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 0<br />
+							<b>Produced From:</b> SCV</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 25<br />
+							<b>Requirements:</b> Engineering Bay
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 12<br />
+							<b>Unit Type:</b> Armored, Mechanical, Structure, Ground
+						</div>
+						<div class="sleft">
+							<div class="sheader">No Armor Upgrades</div>
+							<b>Researched At:</b> Nowhere<br />
+							<b>Requirements:</b> Nothing<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b>Level 1</b></td><td><b>Level 2</b></td><td><b>Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+						
+					<!-- Buildable stuff -->
+
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Radar</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/sensortower/radar.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 30<br />
+							<br />
+							<b>Information:</b> The Radar ability on the Sensor Tower is able to spot units within 30 range in the Fog Of War. This ability has them show up as red exlamation marks when the Terran player looks at it on the map.<br />
+							<br />
+							The Sensor Tower does not reveal the units or show the map in the Radar range. It only tracks the movement of enemies with blips that the Terran player would not be able to see otherwise.<br />
+							<br />
+							Cloaked and Burrowed units are not detected by the Sensor Tower.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Building Armor</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/upgrades/buildingarmor.gif" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 140</td><td>Engineering Bay</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> Building Armor increases the armor of all Terran buildings by 2. This includes the Point Defense Drone and Auto-Turret as well.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />A sensor tower uses passive and active thermal and electromagnetic scanning along with input from seismic sensors and Doppler analysis, enabling it to pinpoint any target within range. Even foes hiding behind terrain features can be detected, although they won't be identified without visual verification.<br />
+						<br />
+						The multi-spectrum output enables foes to easily detect the presence of a sensor tower and identify the location of the base that holds it.<br />
+						<br />
+						Some strategies revolve around "spoofing" the tower with decoy units or simply staying outside its range. Terran commanders have been known to counter by erecting sensor towers in fake base locations just to keep enemies guessing.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Sensor_tower">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+					
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

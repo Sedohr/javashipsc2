@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="../terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Zerg Drone</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/zerg/drone/drone.png" /> <img class="portrait" src="../images/zerg/drone/droneface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 40<br />
+							<b><div class="hpregen">Health Regen:</b> 0.2734  per second</div><br />
+							<b>Armor:</b> 0<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> Claws<br />
+							<b>Damage:</b> 5<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 1.5<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 0.1 (Melee)
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.8125<br />
+							<b>Speed on Creep:</b> 2.8125<br />
+							<b>Acceleration:</b> 2.5<br />
+							<b>Collision Radius:</b> 0.375
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Melee Weapon Upgrades</div>
+							<b>Researched At:</b> Evolution Chamber<br />
+							<b>Requirements:</b> Level 2 requires Lair, level 3 requires Hive<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/mattack1.gif" /> Level 1</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/mattack2.gif" /> Level 2</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/mattack3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 100</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>5</td><td>5</td><td>5</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 50<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/zerg/zerggas.gif" /> 0<br />
+							<b>Supply:</b> <img src="../images/zerg/supplyzerg.gif" /> 1<br />
+							<b>Produced From:</b> Larva</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 17<br />
+							<b>Requirements:</b> Larva
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 8<br />
+							<b>Overlord Size:</b> 1<br />
+							<b>Unit Type:</b> Light, Biological, Ground
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Armor Upgrades</div>
+							<b>Researched At:</b> Evolution Chamber<br />
+							<b>Requirements:</b> Level 2 requires Lair, level 3 requires Hive<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 225</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+						
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Gather</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/gather.png" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> This allows the worker to gather Minerals and Vespene Gas.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Build</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/build.png" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> This allows the unit to create basic structures.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Advanced Build</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/advbuild.png" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> This allows the unit to create advanced structures.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Burrow</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/burrow.gif" /></td><td><img src="../images/minerals.gif" /> 100</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 100</td><td>Lair</td>
+								</tr>
+							</table><br />
+							<b>Cast Time:</b> <img class="timericon" src="../images/timer.gif" /> ~1.33<br />
+							<br />
+							<b>Information:</b> Upon research of burrow, most Zerg units are given the ability. Burrow times vary from unit to unit.<br />
+							<br />
+							You need a Lair to purchase burrow, but it can be researched at any Zerg production structure (Hatchery, Lair, or Hive).<br />
+							<br />
+							Burrowed units are invisible unless a detector comes into range or a spell that reveals burrowed units hits them.<br />
+							<br />
+							Burrow is useful for setting up traps or flanks against opponents without detection<br />
+							<br />
+							A Zerg player can Burrow to try and save units that would otherwise not make an escape if the opponent does not have detection.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Unburrow</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/unburrow.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Comes with Burrow</td>
+								</tr>
+							</table><br />
+							<b>Cast Time:</b> <img class="timericon" src="../images/timer.gif" /> ~1<br />
+							<br />
+							<b>Information:</b> Unburrow is the second part that comes with the research of Burrow. It allows you to bring Burrowed units back up. Unburrow times vary from unit to unit.<br />
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+						
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />Drones stem from the savage gashyrr wasps of Eldersthine, absorbed into the Zerg Swarm to serve as resource gatherers. Over time they became drones, engineered with the larvae's ability to break down their own genetic coding and transform themselves into rudimentary zerg structures. A transforming drone needs creep to provide nourishment and mass to support its new form.<br />
+						<br />
+						Like the larva, drones are controlled by overlords who monitor their progress. Drones are usually single-minded about their tasks, diligently working through even raging combat. Drones possess limited combat ability, but in a swarm, they can present a significant threat, attacking with claws and spines.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Drone">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+						
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable zergtable" border="0">
+							<tr>
+								<td><a href="index.html">Zerg</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hatchery.html">Hatchery Tech</a></b></td><td><a href="drone.html">Drone</a></td><td><a href="overlord.html">Overlord</a></td><td><a href="queen.html">Queen</a></td><td><a href="zergling.html">Zergling</a></td><td><a href="baneling.html">Baneling</a></td><td><a href="roach.html">Roach</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="lair.html">Lair Tech</a></b></td><td><a href="overseer.html">Overseer</a></td><td><a href="hydralisk.html">Hydralisk</a></td><td><a href="mutalisk.html">Mutalisk</a></td><td><a href="corruptor.html">Corruptor</a></td><td><a href="infestor.html">Infestor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hive.html">Hive Tech</a></b></td><td><a href="ultralisk.html">Ultralisk</a></td><td><a href="broodlord.html">Broodlord</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b>Spawned Units</b></td><td><a href="larva.html">Larva</a></td><td><a href="changeling.html">Changeling</a></td><td><a href="infestedterran.html">Infested Terran</a></td><td><a href="broodling.html">Broodling</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hatchery.html">Hatchery Buildings</a></b></td><td><a href="extractor.html">Extractor</a></td><td><a href="spawningpool.html">Spawning Pool</a></td><td><a href="banelingnest.html">Baneling Nest</a></td><td><a href="roachwarren.html">Roach Warren</a></td><td><a href="evolutionchamber.html">Evolution Chamber</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="lair.html">Lair Buildings</a></b></td><td><a href="hydraliskden.html">Hydralisk Den</a></td><td><a href="spire.html">Spire</a></td><td><a href="infestationpit.html">Infestation Pit</a></td><td><a href="nydusnetwork.html">Nydus Network</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hive.html">Hive Buildings</a></b></td><td><a href="ultraliskcavern.html">Ultralisk Cavern</a></td><td><a href="greaterspire.html">Greater Spire</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="spinecrawler.html">Spine Crawler</a></td><td><a href="sporecrawler.html">Spore Crawler</a></td><td><a href="creeptumor.html">Creep Tumor</a></td><td><a href="nydusworm.html">Nydus Worm</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

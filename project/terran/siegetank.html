@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Terran Siege Tank</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/siegetank/siegetank.png" /> <img class="portrait" src="../images/terran/siegetank/siegetankface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 160<br />
+							<b>Armor:</b> 1<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 37.5<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 31.25<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 45<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>- <img class="miniicon terranimgborder" src="../images/terran/siegetank/tankmode.gif" /> Tank Mode-</b><br />
+							<b>Name:</b> 90mm Twin Cannons<br />
+							<b>Damage:</b> 15 (25 vs armored)<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 1.04<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 7<br />
+							<br />
+							<b>- <img class="miniicon terranimgborder" src="../images/terran/siegetank/siegemode.gif" /> Siege Mode-</b><br />
+							<b>Name:</b> 120mm Crucio Shock Cannon<br />
+							<b>Damage:</b> 35 (50 vs armored) (splash)<br />
+							<b>Attack:</b> 1<br />
+							<b>Cooldown:</b> 3<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 2-13
+						</div>
+						<div class="sleft">
+							<div class="sheader">Vehicle Weapon Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/vweapons1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/vweapons2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/vweapons3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+2 (+3) | +3 (+5)</td><td>+4 (+6) | +6 (+10)</td><td>+6 (+9) | +9 (+15)</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>17 (28) | 38 (55)</td><td>19 (31) | 41 (60)</td><td>21 (34) | 44 (65)</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.25 in <img class="miniicon terranimgborder" src="../images/terran/siegetank/tankmode.gif" /> Tank Mode |<br />
+							0 in <img class="miniicon terranimgborder" src="../images/terran/siegetank/siegemode.gif" /> Siege Mode<br />
+							<b>Acceleration:</b> 1000<br />
+							<b>Collision Radius:</b> 0.875
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 150<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 125<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 3<br />
+							<b>Produced From:</b> Factory with Tech Lab</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 45<br />
+							<b>Requirements:</b> Factory with Tech Lab
+						</div>
+						<div class="sleft">
+							<div class="sheader">Vehicle Armor Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/varmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/varmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/varmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>2</td><td>3</td><td>4</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 11<br />
+							<b>Medivac Size:</b> 4<br />
+							<b>Unit Type:</b> Armored, Mechanical, Ground
+						</div>
+					</div>
+					
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Siege Tech</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/siegetank/siegemode.gif" /></td><td><img src="../images/minerals.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 80</td><td>Tech Lab on Factory</td>
+								</tr>
+							</table><br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 4<br />
+							<br />
+							<b>Information:</b> Siege Tech allows Siege Tanks to tranform with Siege mode. While in Siege mode, the tank's attack range is increased to 13, attacks slower, and does splash damage.<br />
+							<br />
+							The amount of damage a Siege Tank does in Siege mode for the splash depends on how far the unit is from the attacked unit. Units that are within 0.4687 range of the attack take full damage, units within 0.4687 and 0.7812 receive 50% damage, and units within 0.7812 and 1.25 only take 25% damage.<br />
+							<br />
+							The Siege tank is immobile while transforming for 4 seconds, and is also immobile until it goes back into Tank Mode.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Tank Mode</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/siegetank/tankmode.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Unlocked with Siege Tech</td>
+								</tr>
+							</table><br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 4<br />
+							<br />
+							<b>Information:</b> Tank Mode transforms the Siege Tank back into its original mobile form, giving the Siege tank its old weapon again.<br />
+							<br />
+							The Siege tank is immobile while transforming for 4 seconds, but is then free to move around once done.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+							<li id="loretab2">Variations</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />The dual-mode siege tank concept was a response to the Guild Wars and the goliath. Prior to the war, work had progressed on a static "final defense" cannon. However, the conflict demonstrated the need for mobility and as a result an effort was made to make the cannon more mobile.<br />
+						<br />
+						The solution was creative. An existing tank design was modified so that it could operate as a conventional tank in addition to being able to deploy the cannon and become a static artillery emplacement at will. Mobile siege tanks were in existence by 2480, several years before the official beginning of the Guild Wars. These tanks were able to be fueled by oil.<br />
+						<br/>
+						Siege tanks function in two modes. First is the "tank" or "assault mode" in which the vehicle may be used in the familiar armored support role using relative light weapons. The second is the more radical "siege mode" in which the vehicle becomes a static emplacement able to deploy a much more powerful and longer ranged weapon.</p></div>
+						
+						<div class="dblorepage" id="dbloretab2"><p><br /><b>AAV-5 Arclite</b><br />
+						<br />
+						The AAV-5 was in service by 2491, renowned throughout the Confederacy for its heavy firepower and stalwart emplacement/advance tactics. It had a crew of three: gunner, driver, and commander/navigator, though could still be crewed by a single operator. In addition, the Arclite version could serve as an APC of sorts, carrying personnel into a hot zone and deploying them via side/rear hatches.<br />
+						<br />
+						The Arclite made navigation easy via its interior viewscreen, although a top hatch still existed should a crew member wish to survey the area personally and/or signal fellow soldiers. The tank also provided a targeting computer, which not only keyed in on heat sources, but also identified their range, notably whether they were in range or not via visual and audio indications.<br />
+						<br />
+						Arclite armament consisted of twin 80mm PPG-7 plasma cannons when mobile and the 120mm Shock Cannon when in siege mode. Later on this was upgraded to the 120mm Mjolnir Artillery Cannon, which fired plasma shells in contrast to the standard explosives of the Shock Cannon. Such weapons were sometimes used for "scorched earth" operations.<br />
+						<br />
+						By the aftermath of the Brood War however, the AAV-5's "tank/assault mode" left much to be desired. Its armament and armor was too light to either advance, or hold a firebase from close-quarters assault, without significant support. The Crucio was developed to address these shortcomings.</p>
+						
+						<p><br /><b>Crucio</b><br />
+						<br />
+						The Crucio was designed as the AAV-5's replacement., and had entered Dominion service by 2502.<br />
+						<br />
+						The Crucio features superior protection and armament compared to its predecessor. The Crucio was designed for increased survivability, with an enlarged, reinforced turret and hull. The turret layout also features an upgraded Tank-Mode armament package, allowing the Crucio to defend itself more successfully in open battlefields. The Crucio is costlier than its predecessor, but its increased versatility justifies the expenses. By way of armament, the Crucio possesses twin 90mm plasma cannons. in its assault mode and a 180mm Shock Cannon that scatters superheated tungsten in an area 50% larger than the 120mm version. Maelstrom rounds are an alternate form of ammunition.<br />
+						<br />
+						Dominion infantry soldiers are universally convinced that Crucio operators inflict more damage on friendly forces than on the enemy. Consequently, Crucio operators stick together during shore leave. LarsCorp addressed this issue by developing a "smart shell" for the Crucio that scans for allies on impact and adjusts its detonation to minimize damage to friendly units. Field tests have shown that this shell reduces friendly fire fatalities by 75%, though due caution is still recommended when walking into a fire zone.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Siege_tank">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+						
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

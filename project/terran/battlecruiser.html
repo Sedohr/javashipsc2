@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Terran Battlecruiser</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/battlecruiser/battlecruiser.png" /> <img class="portrait" src="../images/terran/battlecruiser/battlecruiserface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 550<br />
+							<b>Armor:</b> 3<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 100<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 75<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 90<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 50/200 |</div><br />
+							<div class="energy"><img class="timericon" src="../images/energy.gif" /> 75/200 with <img class="miniicon terranimgborder" src="../images/terran/battlecruiser/behemothreactor.gif" /> Behemoth Reactor</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0.5625 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>-Ground Attack-</b><br />
+							<b>Name:</b> ATS Laser Batteries<br />
+							<b>Damage:</b> 8<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 0.225<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 6<br />
+							<br />
+							<b>-Air Attack-</b><br />
+							<b>Name:</b> ATA Laser Batteries<br />
+							<b>Damage:</b> 6<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 0.225<br />
+							<b>Targets:</b> Air only<br />
+							<b>Attack Range:</b> 6
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Weapon Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+1 | +1</td><td>+2 | +2</td><td>+3 | +3</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>9 | 7</td><td>10 | 8</td><td>11 | 9</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 1.875<br />
+							<b>Acceleration:</b> 1<br />
+							<b>Collision Radius:</b> 1.25
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 400<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 300<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 6<br />
+							<b>Produced From:</b> Starport with Tech Lab</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 90<br />
+							<b>Requirements:</b> Fusion Core
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Armor Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 225</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>4</td><td>5</td><td>6</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 12<br />
+							<b>Unit Type:</b> Armored, Mechanical, Massive, Air
+						</div>
+					</div>
+						
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Yamato Cannon</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/battlecruiser/yamatocannon.png" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 60</td><td>Fusion Core</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 10<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 3<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 125</div><br />
+							<b>Damage:</b> 300<br />
+							<br />
+							<b>Information:</b> Once Yamato Cannon has been researched, it allows the Battlecruiser to use its ultimate weapon.<br />
+							<br />
+							The Yamato Cannon costs 125 energy to cast, and has a range of 10. Once a target has been selected, it takes the Battlecruiser 3 seconds to charge up the cannon, and then shoot it.<br />
+							<br />
+							Once the Battlecruiser has a target, it can still hit it with the Yamato Cannon up to a range of 20.<br />
+							<br />
+							The Battlecruiser has a graphic change once Yamato Cannon is researched. It will start glowing in the center where it charges up the cannon with orange/yellow colors.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Behemoth Reactor</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/battlecruiser/behemothreactor.gif" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 80</td><td>Fusion Core</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> Once Behemoth Reactor is researched, Battlecruiser will start with 75 energy instead of 50.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+							<li id="loretab2">Variations</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />The battlecruiser is a type of terran capital ship employed in the Koprulu Sector. Battlecruisers were employed during the Guild Wars when space engagements were fought by capital ships and medium-sized gunships.<br />
+						<br />
+						The development of anti-capital ship starfighters, such as Wraiths, did not spell the end of battlecruisers. The large warships adapted to carry strike craft which augmented and complemented the combat value of both. Battlecruisers continue to be an integral part of terran space forces as general purpose warships and command ships during extended campaigns.<br />
+						<br />
+						Battlecruisers stem as far back as the early days of the Terran Confederacy in the 24th century and continue to be used in the 26th. While there are many classes of battlecruisers, all are armed with lasers and protected by neosteel armor. Gravity accelerators are also found on all battlecruisers.</p></div>
+						
+						<div class="dblorepage" id="dbloretab2"><p><br /><b>Leviathan-class</b><br />
+						<br />
+						The Leviathan-class battlecruiser is an uncommon battlecruiser class and although still operating at the dawn of the 26th century, had largely been supplanted by the Behemoth-class variant. The Leviathan-class is capable of traveling through warp space and features ports for transport craft, smaller craft linking into the ship via hydraulics. These ports are located perilously close to the bridge however, making a Leviathan vulnerable to any enemy boarding action.</p>
+						
+						<p><br /><b>Behemoth-class</b><br />
+						<br />
+						The Behemoth-class battlecruiser was the most common battlecruiser class and represented the "standard" battlecruiser variant during the Great War. The Behemoth variant is greatly advanced from its Leviathan-class predecessor, featuring the ability to operate within planetary atmospheres and even land on planets. It also features a total of four docking bays (as opposed to hydraulic entry points) which are equipped with force fields, allowing easy deployment of fighters without fear of decompression and greater resilience to enemy boarding actions. Like the Leviathan, it is capable of traveling through warp space, even capable of making jumps within a planet's atmosphere.<br />
+						<br />
+						Behemoth-class armor consists of the standard neosteel, along with energy shields, while armament consists of multiple burst laser batteries (at least 8 around the ship's 'hammerhead') and a complement of nuclear warheads. Despite the heavy arsenal, Behemoth armament is slightly constricted in that its laser batteries cannot fire at targets to the side and are vulnerable to interceptors and its warheads are reserved for orbital bombardment rather than space combat.<br />
+						<br />
+						A saving grace for the Behemoth-class exists in the form of the Yamato cannon. One such use of these weapons is that of carrying out a scorched earth policy. However, the cannon's primary weakness is its huge energy requirements and while the installation of a colossus reactor allows for increased energy storage, it is not a long term solution. The Terran Dominion's Behemoths required access to physics labs to "power up their weapon systems". Should a fleet commander lose access to these accelerators, an entire Behemoth-class fleet can be crippled.<br />
+						<br />
+						Fighters are an integral component to battlecruiser deployment and the Behemoth-class conforms to this, capable of deploying Wraiths and scoutships to engage the enemy. It is also akin to a terran carrier, capable of housing hundreds of soldiers and hardware and maintaining dropships and shuttles for rapid deployment. Searchlights are also featured.<br />
+						<br />
+						Despite its shortcomings, the Behemoth-class has proven to be an enduring design, keeping up to date with periodic upgrades while its hammerhead design had provided the basis for future classes. Although more advanced classes of battlecruiser have been developed, the Behemoth-class continue to remain in service.</p>
+						
+						<p><br /><b>Hercules-class</b><br />
+						<br />
+						The Hercules-class battlecruiser came into service after the Brood War. It is largely based on the Behemoth-class, albeit equipped with additional laser batteries for a greater volume of fire. Plasma torpedoes are an optional armament, capable of saturating an area with a lethal deluge of fire, ideal for breaking up oncoming attack waves or ravaging a defensive position. As with the Yamato cannon, a sufficient reserve of energy was needed to unleash a plasma torpedo bombardment.</p>
+						
+						<p><br /><b>Minotaur-class</b><br />
+						<br />
+						The Minotaur-class battlecruiser was in service to the Terran Dominion by 2502. This class (or at least the Bucephalus, a flagship) has dimensions of about 560 meters length by 82.4 meters wide, and a crew numbering approximately 8000 people. Minotaurs are largely based on the Behemoth-class, and have additional laser batteries for a greater volume of fire. In 2503, these warships were suddenly recalled to Korhal IV. They were ordered to abandon their current assignments, disembark passengers and cargo on nearby habitable worlds, and proceed immediately to the Dominion capital to be refitted for interatmospheric combat.<br />
+						<br />
+						The Minotaur-class may be upgraded by a variety of tactical systems. Equipped with a Type-V Yamato cannon and energy shields, Minotaurs can also be equipped with missile pods for use against aerial targets and a defensive matrix.<br />
+						<br />
+						The interior of Minotaur battlecruisers are known to feature personal quarters, a brig, a mess hall and a bridge.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Battlecruiser">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+						
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

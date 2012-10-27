@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="../terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Protoss Sentry</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/protoss/sentry/sentry.png" /> <img class="portrait" src="../images/protoss/sentry/sentryface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 40<br />
+							<b><div class="shield">Shield:</b> 40</div><br />
+							<b><div class="shield">Shield Regen:</b> 2 per second</div><br />
+							<b>Armor:</b> 1 | <div class="shield">0</div><br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 50/200</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0.5625 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> Distruption Beam<br />
+							<b>Damage:</b> 6<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 1<br />
+							<b>Targets:</b> Ground and Air<br />
+							<b>Attack Range:</b> 5
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.25<br />
+							<b>Acceleration:</b> 1000<br />
+							<b>Collision Radius:</b> 0.5
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Weapon Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/gweap1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/gweap2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/gweap3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 100</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>7</td><td>8</td><td>9</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 50<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/protoss/tossgas.gif" /> 100<br />
+							<b>Supply:</b> <img src="../images/protoss/supplytoss.gif" /> 2<br />
+							<b>Produced From:</b>Gateway/Warpgate</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 37/5<br />
+							<b>Warpgate Cooldown:</b> 32<br />
+							<b>Requirements:</b> Cybernetics Core
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 10<br />
+							<b>Warp Prism Size:</b> 2<br />
+							<b>Unit Type:</b> Light, Mechanical, Psionic, Ground
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Armor Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/garmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/garmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/garmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 100</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>2</td><td>3</td><td>4</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sleft">
+							<div class="sheader">Shield Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 225</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Force Field</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/sentry/forcefield.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Cooldown:</b> <img class="timericon" src="../images/timer.gif" /> 0<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 15<br />
+							<b>Range:</b> 9<br />
+							<b>Radius:</b> 1.7<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 50</div><br />
+							<br />
+							<b>Information:</b> In order to use Force Field the user has to activate the spell, and then left click where to place it. When placing the ability, a graphic shows up to better represent where the ability will be, and allows for more precise placement.<br />
+							<br />
+							The Force Field ability is one of the key parts of most any early game Protoss play. An example of this is in the early parts of Protoss versus Zerg, where the forcefield is useful to keep Zergs from running Zerglings into the Protoss base, or to split an attacking Zerg army into smaller armies to combat one at a time.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Guardian Shield</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/sentry/guardianshield.jpg" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Cooldown:</b> <img class="timericon" src="../images/timer.gif" /> 0<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 15<br />
+							<b>Range:</b> 0 (self)<br />
+							<b>Radius:</b> 4<br /> 
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 75</div><br />
+							<b>Damage Reduction Bonus:</b> 2<br />
+							<br />
+							<b>Information:</b> Once this spell is activated, a 4 radius aura is projected from the sentry that gives an extra 2 damage reduction to any allied units in the area. The aura includes air units, and units above or below the same height of the sentry as long as they are in range.<br />
+							<br />
+							This spell is the equivalent of having 2 extra armor on the units in the radius. This stacks with normal armor bonuses, but not with any other Guardian Shield spells. This means that a fully armored Zealot can have 6 armor while in a Guardian Shield. (1 base, 3 from upgrades, and 2 from the Guardian Shield)
+						</div>
+						<div class="scenter">
+							<div class="sheader">Hallucination</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/sentry/hallucination.jpg" /></td><td><img src="../images/minerals.gif" /> 100</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 80</td><td>Cybernetics Core</td>
+								</tr>
+							</table><br />
+							<b>Cooldown:</b> <img class="timericon" src="../images/timer.gif" /> 0<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 60<br />
+							<b>Range:</b> 0 (self)<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 100</div><br />
+							<br />
+							<b>Information:</b> This spell allows the sentry to create fake versions of certain Protoss units. These units appear real to an enemy, but their disguise can be revealed with a detector. Hallucinations can not do damage when they attack, and receive double damage from all targets.<br />
+							<br />
+							Certain hallucinations create multiple units. You receive four hallucinations for a Probe, two for Zealots, Stalkers, and High Templars, and only one for the rest.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>Shift Queue Blinking</b><br />
+							Sometimes when you have a large amount of stalkers, blinking can become more difficult and not all stalkers will end up where intended. A way to help this is to queue up a move command (to have the stalkers in range to blink), then the blink, and then another move command (to move the stalkers in front out of the way).</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br /><a href="../images/protoss/sentry/sentryart.jpg"><img class="resizeimagesizeright1" src="../images/protoss/sentry/sentryart.jpg" /></a>Sentries are combat drones that are equipped with force field generators and holo-projectors. These deadly automatons are used to bolster the dwindling numbers of the protoss race, and to manipulate the outcome of major battles.<br />
+						<br />
+						Sentries can deploy massive guardian shields that protect friendly units, and reduce the damage they take from ranged attacks. They can also project force field barriers to stall or split up opposing forces. Sentries also have the ability to create hallucinatory images that can draw enemy fire while a real protoss strike force maneuvers into position to deliver the killing blow.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://us.battle.net/sc2/en/game/unit/sentry">Battle.net Sentry page</a>.<br />
+						<br />
+						Photo 1 created by ~Medic-SP/Will. Copyright: ~Medic-SP/Will. <a href="http://browse.deviantart.com/?qh=&section=&global=1&q=protoss+sentry#/d4b7178">Link to deviantart page.</a></p>
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable protosstable" border="0">
+							<tr>
+								<td><a href="index.html">Protoss</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="nexus.html">Nexus</a></b></td><td><a href="probe.html">Probe</a></td><td><a href="mothership.html">Mothership</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="gateway.html">Gatway/Warpgate</a></b></td><td><a href="zealot.html">Zealot</a></td><td><a href="stalker.html">Stalker</a></td><td><a href="sentry.html">Sentry</a></td><td><a href="hightemplar.html">High Templar</a></td><td><a href="darktemplar.html">Dark Templar</a></td><td><a href="archon.html">Archon</a></td>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="robofacility.html">Robotics Facility</a></b></td><td><a href="observer.html">Observer</a></td><td><a href="immortal.html">Immortal</a></td><td><a href="colossus.html">Colossus</a></td><td><a href="warpprism.html">Warp Prism</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="stargate.html">Stargate</b></td><td><a href="phoenix.html">Phoenix</a></td><td><a href="voidray.html">Void Ray</a></td><td><a href="carrier.html">Carrier</a></td><td><a href="interceptor.html">Interceptor</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="nexus.html">Nexus</a></td><td><a href="pylon.html">Pylon</a></td><td><a href="assimilator.html">Assimilator</a></td><td><a href="gateway.html">Gateway/Warpgate</a></td><td><a href="forge.html">Forge</a></td><td><a href="cannon.html">Photon Cannon</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Advanced Buildings</b></td><td><a href="cyberneticscore.html">Cybernetics Core</a></td><td><a href="robofacility.html">Robotics Facility</a></td><td><a href="twilightcouncil.html">Twilight Council</a></td><td><a href="stargate.html">Stargate</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Top Tier Buildings</b></td><td><a href="robobay.html">Robotics Bay</a></td><td><a href="templararchives.html">Templar Archives</a></td><td><a href="darkshrine.html">Dark Shrine</a></td><td><a href="fleetbacon.html">Fleet Beacon</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

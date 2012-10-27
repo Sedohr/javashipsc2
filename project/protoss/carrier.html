@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="../terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Protoss Carrier</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/protoss/carrier/carrier.png" /> <img class="portrait" src="../images/protoss/carrier/carrierface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 300<br />
+							<b><div class="shield">Shield:</b> 150</div><br />
+							<b><div class="shield">Shield Regen:</b> 2 per second</div><br />
+							<b>Armor:</b> 2 | <div class="shield">0</div><br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> Interceptor Launch<br />
+							<b>Damage:</b> 0<br />
+							<b>Attacks:</b> 0<br />
+							<b>Cooldown:</b> 0.5<br />
+							<b>Targets:</b> Ground and Air<br />
+							<b>Attack Range:</b> 8
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 1.875<br />
+							<b>Acceleration:</b> 1.063<br />
+							<b>Collision Radius:</b> 1.25
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Weapon Upgrades</div>
+							<b>Researched At:</b> Cybernetics Core<br />
+							<b>Requirements:</b> Levels 2-3 requires Fleet Beacon<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/aweap1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/aweap2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/aweap3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 225</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 350<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/protoss/tossgas.gif" /> 250<br />
+							<b>Supply:</b> <img src="../images/protoss/supplytoss.gif" /> 6<br />
+							<b>Produced From:</b> Stargate</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 120<br />
+							<b>Requirements:</b> Fleet Beacon
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 12<br />
+							<b>Unit Type:</b> Armored, Massive, Mechanical, Air
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Armor Upgrades</div>
+							<b>Researched At:</b> Cybernetics Core<br />
+							<b>Requirements:</b> Levels 2-3 requires Fleet Beacon<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/aarmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/aarmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/aarmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 225</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>3</td><td>4</td><td>5</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sleft">
+							<div class="sheader">Shield Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 225</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Build Interceptor</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/carrier/buildinterceptor.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Minerals:</b> <img src="../images/minerals.gif" /> 25<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 8<br/>
+							<br />
+							<b>Information:</b> A Carrier only starts with 4 Interceptors. In order to increase the amount of Interceptors in a Carrier, it has to construct more. This costs 25 minerals and takes 8 seconds. You can also replenish destroyed Interceptors this way.<br />
+							<br />
+							This ability can be set to Auto-Cast, which is done by right clicking the icon. This will have the Carrier automatically create Interceptors if there is room and enough money.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Graviton Catapult</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/carrier/gravitoncatapult.gif" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 80</td><td>Fleet Beacon</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> This upgrade vastly increases the speed at which interceptors are launched from the Carrier. Instead of a launch speed of 0.5, the first four will launch at a speed of 0.125, and the last four with a speed of 0.25.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>Shift Queue Blinking</b><br />
+							Sometimes when you have a large amount of stalkers, blinking can become more difficult and not all stalkers will end up where intended. A way to help this is to queue up a move command (to have the stalkers in range to blink), then the blink, and then another move command (to move the stalkers in front out of the way).</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />Carriers are large, heavily armored and shielded warships. They form the core of the Great Fleet, serving as command centers for fleet commanders, though some terrans think this position will be taken by the void ray.<br />
+						<br />
+						Carriers have forward mounted energy weapons used for purification; they lack other armament beyond interceptors. The computer-controlled Interceptors are unleashed in swarms against other ships. The hangers may also carry other craft such as scouts and arbiters.<br />
+						<br />
+						In battle, Carriers appear to be virtual hornet’s nests of activity as their small allies dart swiftly in and out, alternating between attacking enemies and repairing damage. Carriers may make warp space jumps and can operate in both atmospheric and deep space conditions. Carrier commanders have private quarters.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Carrier">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable protosstable" border="0">
+							<tr>
+								<td><a href="index.html">Protoss</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="nexus.html">Nexus</a></b></td><td><a href="probe.html">Probe</a></td><td><a href="mothership.html">Mothership</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="gateway.html">Gatway/Warpgate</a></b></td><td><a href="zealot.html">Zealot</a></td><td><a href="stalker.html">Stalker</a></td><td><a href="sentry.html">Sentry</a></td><td><a href="hightemplar.html">High Templar</a></td><td><a href="darktemplar.html">Dark Templar</a></td><td><a href="archon.html">Archon</a></td>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="robofacility.html">Robotics Facility</a></b></td><td><a href="observer.html">Observer</a></td><td><a href="immortal.html">Immortal</a></td><td><a href="colossus.html">Colossus</a></td><td><a href="warpprism.html">Warp Prism</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="stargate.html">Stargate</b></td><td><a href="phoenix.html">Phoenix</a></td><td><a href="voidray.html">Void Ray</a></td><td><a href="carrier.html">Carrier</a></td><td><a href="interceptor.html">Interceptor</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="nexus.html">Nexus</a></td><td><a href="pylon.html">Pylon</a></td><td><a href="assimilator.html">Assimilator</a></td><td><a href="gateway.html">Gateway/Warpgate</a></td><td><a href="forge.html">Forge</a></td><td><a href="cannon.html">Photon Cannon</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Advanced Buildings</b></td><td><a href="cyberneticscore.html">Cybernetics Core</a></td><td><a href="robofacility.html">Robotics Facility</a></td><td><a href="twilightcouncil.html">Twilight Council</a></td><td><a href="stargate.html">Stargate</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Top Tier Buildings</b></td><td><a href="robobay.html">Robotics Bay</a></td><td><a href="templararchives.html">Templar Archives</a></td><td><a href="darkshrine.html">Dark Shrine</a></td><td><a href="fleetbacon.html">Fleet Beacon</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

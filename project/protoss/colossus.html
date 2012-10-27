@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="../terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Protoss Colossus</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/protoss/colossus/colossus.png" /> <img class="portrait" src="../images/protoss/colossus/colossusface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 200<br />
+							<b><div class="shield">Shield:</b> 150</div><br />
+							<b><div class="shield">Shield Regen:</b> 2 per second</div><br />
+							<b>Armor:</b> 1 | <div class="shield">0</div><br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> Thermal Lances<br />
+							<b>Damage:</b> 15 (splash)<br />
+							<b>Attacks:</b> 2<br />
+							<b>Cooldown:</b> 1.65<br />
+							<b>Targets:</b> Ground<br />
+							<b>Attack Range:</b> 6 |<br />
+							9 with <img class="miniicon protossimgborder" src="../images/protoss/colossus/extendedthermallances.gif" /> Extended Thermal Lances
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.25<br />
+							<b>Acceleration:</b> 1000<br />
+							<b>Collision Radius:</b> 1
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Weapon Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/gweap1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/gweap2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/gweap3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 100</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+2</td><td>+4</td><td>+6</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>17 (x2)</td><td>19 (x2)</td><td>21 (x2)</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 300<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/protoss/tossgas.gif" /> 200<br />
+							<b>Supply:</b> <img src="../images/protoss/supplytoss.gif" /> 6<br />
+							<b>Produced From:</b> Robotics Facility</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 75<br />
+							<b>Requirements:</b> Robotics Bay
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 10<br />
+							<b>Warp Prism Size:</b> 8<br />
+							<b>Unit Type:</b> Armored, Mechanical, Massive, Ground
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Armor Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/garmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/garmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/garmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 100</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>2</td><td>3</td><td>4</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sleft">
+							<div class="sheader">Shield Upgrades</div>
+							<b>Researched At:</b> Forge<br />
+							<b>Requirements:</b> Levels 2-3 requires Twilight Council<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields1.gif" /> Level 1</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields2.gif" /> Level 2</b></td><td><b><img class="upgradeicon protossimgborder" src="../images/protoss/upgrades/shields3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 150</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 225</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Cliff Walk</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/colossus/cliffwalk.png" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> The long legs of the Colossus allows it to travel up and down cliffs that other ground units could not pass with ease. This allows the Colossus to easily go up and down sides of cliffs, but not through impassible terrain like water or destructible rocks.<br />
+							<br />
+							The Colossus may only go up or down one layer of a cliff at a time. This prevents them from going up and down steep cliffs, or from going up or down more than one elevation change at once.<br />
+							<br />
+							The long legs of the Colossus also means that they can pass over smaller units with ease and not distrupt pathing, and the same goes for smaller units that want to pass below the Colossus.<br />
+							<br />
+							A side effect of having such long legs for mobility, it that the Colossus is also considered a 'flying' unit for attacks. This means that attacks that could only hit air can also hit the Colossus, since it is considered 'flying' for attacks. This also means it is revealed when attacking from high ground that an opponent could not otherwise see up.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Extended Thermal Lances</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon protossimgborder" src="../images/protoss/colossus/extendedthermallances.gif" /></td><td><img src="../images/minerals.gif" /> 200</td><td><img class="timericon" src="../images/protoss/tossgas.gif" /> 200</td><td><img class="timericon" src="../images/timer.gif" /> 140</td><td>Robotics Bay</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> Upon research of this ability, all Colossus have their range increased from 6 to 9, allowing them to attack targets much further than before.<br />
+							<br />
+							Extended Thermal Lances is an important research for almost any Colossus usage. The extra range increases their survivability by a large amount, as this allows the Colossus to attack from a much safer distance against targets that would otherwise easily destroy it.<br />
+							<br />
+							Extended Thermal Lances also helps when sieging an opponent, as this allows them to keep their distance from base defenses while still attacking. Much like a how a Siege Tank or Broodlord can siege an opponent while staying relatively2 safe
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>Shift Queue Blinking</b><br />
+							Sometimes when you have a large amount of stalkers, blinking can become more difficult and not all stalkers will end up where intended. A way to help this is to queue up a move command (to have the stalkers in range to blink), then the blink, and then another move command (to move the stalkers in front out of the way).</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />The colossus is an antiquated protoss war machine, dating back to the Kalath Intercession. It is a towering construct, striding across the battlefield on four tall, slender legs which give it an extremely high level of mobility. The great height of the machine allows it to step up and down cliffs and other steep elevations with little difficulty, and gives it a dominating field of fire.<br />
+						<br />
+						The heavily armored hull of the colossus carries two powerful thermal lances: one mounted on each side of its body. Complex focusing and targeting systems are used to pinpoint the continuous damage output of the thermal lances for optimal efficiency. A colossus's beam cuts a fiery swathe of destruction through multiple enemies with each firing cycle, able to reduce a group of marines to ashes in an instant.<br />
+						<br />
+						The colossus can be transported by the warp prism, which transforms it and other transported units into energy. The colossus is feared for being a war machine, and some protoss believe they cannot be controlled and could turn against them.<br />
+						<br />
+						The colossus is unique in that it was created purely as a war machine, in contrast to most protoss automatons which were mainly created for industrial and/or resource gathering purposes. Such a trait was demonstrated by the mass slaughter carried out against the kalathi, appalling the protoss.<br />
+						<br />
+						As such, the Conclave outlawed the manufacture of colossi, and existing machines were deactivated before being sealed away. Some were sent to distant asteroids and uninhabited moons. Others were stored on Aiur, some underwater, awaiting a reactivation signal. The war against the zerg, however, prompted the return of the colossi to the protoss arsenal. In 2503, the protoss began collecting them using coordinates collected from a preserver, hoping to use them in the fight against the zerg despite misgivings.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Colossus">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable protosstable" border="0">
+							<tr>
+								<td><a href="index.html">Protoss</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="nexus.html">Nexus</a></b></td><td><a href="probe.html">Probe</a></td><td><a href="mothership.html">Mothership</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="gateway.html">Gatway/Warpgate</a></b></td><td><a href="zealot.html">Zealot</a></td><td><a href="stalker.html">Stalker</a></td><td><a href="sentry.html">Sentry</a></td><td><a href="hightemplar.html">High Templar</a></td><td><a href="darktemplar.html">Dark Templar</a></td><td><a href="archon.html">Archon</a></td>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="robofacility.html">Robotics Facility</a></b></td><td><a href="observer.html">Observer</a></td><td><a href="immortal.html">Immortal</a></td><td><a href="colossus.html">Colossus</a></td><td><a href="warpprism.html">Warp Prism</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b><a href="stargate.html">Stargate</b></td><td><a href="phoenix.html">Phoenix</a></td><td><a href="voidray.html">Void Ray</a></td><td><a href="carrier.html">Carrier</a></td><td><a href="interceptor.html">Interceptor</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="nexus.html">Nexus</a></td><td><a href="pylon.html">Pylon</a></td><td><a href="assimilator.html">Assimilator</a></td><td><a href="gateway.html">Gateway/Warpgate</a></td><td><a href="forge.html">Forge</a></td><td><a href="cannon.html">Photon Cannon</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Advanced Buildings</b></td><td><a href="cyberneticscore.html">Cybernetics Core</a></td><td><a href="robofacility.html">Robotics Facility</a></td><td><a href="twilightcouncil.html">Twilight Council</a></td><td><a href="stargate.html">Stargate</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable protosstable" border="0">
+							<tr>
+								<td><b>Top Tier Buildings</b></td><td><a href="robobay.html">Robotics Bay</a></td><td><a href="templararchives.html">Templar Archives</a></td><td><a href="darkshrine.html">Dark Shrine</a></td><td><a href="fleetbacon.html">Fleet Beacon</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Terran Viking</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/viking/viking.png" /> <img class="portrait" src="../images/terran/viking/vikingface1.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 125<br />
+							<b>Armor:</b> 0<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 37.5<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 18.75<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 42<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>- <img class="miniicon terranimgborder" src="../images/terran/viking/fightermode.gif" /> Fighter Mode -</b><br />
+							<b>Name:</b> Lanzer Torpedoes<br />
+							<b>Damage:</b> 10 (14 vs armored)<br />
+							<b>Attacks:</b> 2<br />
+							<b>Cooldown:</b> 2<br />
+							<b>Targets:</b> Air only<br />
+							<b>Attack Range:</b> 9<br />
+							<br />
+							<b>- <img class="miniicon terranimgborder" src="../images/terran/viking/assaultmode.gif" /> Assault Mode -</b><br />
+							<b>Name:</b> Twin Gatling Cannon<br />
+							<b>Damage:</b> 12<br />
+							<b>Attacks:</b> 1<br />
+							<b>Cooldown:</b> 1<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 6
+						</div>
+						<img class="portrait2" src="../images/terran/viking/vikingface2.jpg" />
+						<div class="sleft">
+							<div class="sheader">Air Weapon Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+1 (+1) | +1</td><td>+2 (+2) | +2</td><td>+3 (+3) | +3</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>11 (15) (x2) | 13</td><td>12 (16) (x2) | 14</td><td>13 (17) (x2) | 15</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.75 in <img class="miniicon terranimgborder" src="../images/terran/viking/fightermode.gif" /> Figher Mode |<br />
+							2.25 in <img class="miniicon terranimgborder" src="../images/terran/viking/assaultmode.gif" /> Assault Mode<br />
+							<b>Acceleration:</b> 2.625 in <img class="miniicon terranimgborder" src="../images/terran/viking/fightermode.gif" /> Figher Mode |<br />
+							1000 in <img class="miniicon terranimgborder" src="../images/terran/viking/assaultmode.gif" /> Assault Mode<br />
+							<b>Collision Radius:</b> 0.75
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 125<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 75<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 2<br />
+							<b>Produced From:</b> Starport</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 42<br />
+							<b>Requirements:</b> Starport
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Armor Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 225</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 10<br />
+							<b>Medivac Size:</b> 2<br />
+							<b>Unit Type:</b> Armored, Mechanical, Ground/Air
+						</div>
+					</div>
+						
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Fighter Mode</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/viking/fightermode.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 3<br />
+							<br />
+							<b>Information:</b> Fighter Mode transforms the Viking to its air mode. The Fighter Mode viking flys and has an anti-air attack.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Assault Mode</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/viking/assaultmode.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 3<br />
+							<br />
+							<b>Information:</b> Assault Mode transforms the Viking to its ground mode. The Assault Mode walks and has a ground attack.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+							<li id="loretab2">History</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />Based heavily on the transformation design of the siege tank, the Viking was designed to be the ultimate anti-air and ground-support weapon system, armed with MT50 Lanzer Torpedoes and twin gatling guns for both respective tasks. A targeting system exists for both, along with displaying height and location.<br />
+						<br />
+						The ability to self-destruct is also present. The arm and leg servos are interchangeable, easing repairs. Bellerephon further expanded the Viking's options through the Phobos-class weapon system—an improved loadout that adds a longer-range anti-air missile and an improved gatling cannon increased range in ground assaults. Enlightened Dynamics also developed Ripwave missiles for the hybrid.<br />
+						<br />
+						In its aerial mode, Vikings are classified as air superiority fighters. The walker mode was considered more important. They can be paired with AH/G-24 Banshees for operations as air cavalry.<br />
+						<br />
+						While the Viking's versatility is its greatest asset, it is also one of its drawbacks. Few pilots are able to handle both combat modes and the majority of Viking pilots are killed in their first battle (the term "cherry" is used for Viking pilots who have yet to carry out a transformation). Those who survive however, become amongst the most skilled pilots. The elite few who make it through training are so deadly that their names are well-known by both allies and enemies across the Koprulu Sector.<br />
+						<br />
+						Viking pilots are equipped with helmets with visors that lower when they take their vehicles into the air. However, regardless of whatever advantages the visor might bring, it is still possible to fly a Viking without one.</p></div>
+						
+						<div class="dblorepage" id="dbloretab2"><p><br />The Brood War revealed weaknesses in terran anti-air capability. Wraith combat fighters and valkyrie missile frigates proved to be an unwieldy combination against agile zerg airborne organisms. In addition, ground-based anti-air support from goliath assault walkers was too limited in its mobility: all too often airborne attackers would simply move out of the goliath's range.<br />
+						<br />
+						In the aftermath of the war, terran weapon technicians proposed a radical new concept to resolve both of these problems; an armored vehicle with the ability to change its combat role from an assault walker to an air-superiority fighter, enabling it to switch smoothly to fulfill tactical needs in a developing battle.<br />
+						<br />
+						The Wyrm was an early design. It was quickly succeeded by the Viking, which had more armor, more options and a faster response time. A Viking was showcased at Ursa in 2502, where one single-handedly destroyed a military base. Final field testing of the Viking was carried out at Valhalla.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Viking">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+						
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

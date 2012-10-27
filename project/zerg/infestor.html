@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="../terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Zerg Infestor</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/zerg/infestor/infestor.png" /> <img class="portrait" src="../images/zerg/infestor/infestorface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 90<br />
+							<b><div class="hpregen">Health Regen:</b> 0.2734/s</div><br />
+							<b>Armor:</b> 0<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 50/200 |</div><br />
+							<div class="energy"><img class="timericon" src="../images/energy.gif" /> 75/200 with <img class="miniicon zergimgborder" src="../images/zerg/infestor/pathogenglands.gif" /> Pathogen Glands</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0.5625 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">None</div>
+							<b>Name:</b> None<br />
+							<b>Damage:</b> 0<br />
+							<b>Attacks:</b> 0<br />
+							<b>Cooldown:</b> 0<br />
+							<b>Targets:</b> None<br />
+							<b>Attack Range:</b> 0<br />
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.25<br />
+							<b>Speed on Creep:</b> 2.925<br />
+							<b>Speed Burrowed:</b> 2<br />
+							<b>Speed Burrowed on Creep:</b> 2.6<br />
+							<b>Acceleration:</b> 1000<br />
+							<b>Collision Radius:</b> 0.75
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Missile Weapon Upgrades</div>
+							<b>Researched At:</b> Evolution Chamber<br />
+							<b>Requirements:</b> Level 2 requires Lair, level 3 requires Hive<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/rattack1.gif" /> Level 1</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/rattack2.gif" /> Level 2</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/rattack3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 100</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 200</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 100<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/zerg/zerggas.gif" /> 150<br />
+							<b>Supply:</b> <img src="../images/zerg/supplyzerg.gif" /> 2<br />
+							<b>Produced From:</b> Larva</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 50<br />
+							<b>Requirements:</b> Infestation Pit
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 10<br />
+							<b>Overlord Size:</b> 2<br />
+							<b>Unit Type:</b> Armored, Biological, Psionic, Ground
+						</div>
+						<div class="sleft">
+							<div class="sheader">Ground Armor Upgrades</div>
+							<b>Researched At:</b> Evolution Chamber<br />
+							<b>Requirements:</b> Level 2 requires Lair, level 3 requires Hive<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon zergimgborder" src="../images/zerg/upgrades/garmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 225</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+						
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Spawn Infested Terran</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/infestor/infestedterran.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 9<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 30s<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 25</div><br />
+							<br />
+							<b>Information:</b> This ability allows the Infestor to spit out Infested Terran eggs. The eggs take 5 seconds to gestate, and then an Infested Terran pops out with a 30 second life span. Once 30 seconds is up, the Infested Terrans die.<br />
+							<br />
+							The eggs have 100 hp, while the Infested Terrans themselves have 50. They receive damage bonuses from Ground Ranged upgrades.<br />
+							<br />
+							This is the only ability that an Infestor can safely use while burrowed. To use any other spell, they have to un burrow and become vulnerable.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Fungal Growth</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/infestor/fungalgrowth.png" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 9<br />
+							<b>Radius:</b> 2<br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 4s<br />
+							<b>Damage:</b> 30 (40 vs armored) over the duration<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 75</div><br />
+							<br />
+							<b>Information:</b> Fungal Growth immobilizes any enemy unit caught in the spell radius, while doing 30 damage to them over the duration. Fungal Growth does 40 damage versus armored units.<br />
+							<br />
+							Fungal Growth is a great spell for holding enemies in place to help zerglings surround them, or have your roaches catch up. It also helps with defense on ramps or defending broodlords.<br />
+							<br />
+							With the Pathogen Glands upgrade, an infestor has enough energy upon spawning to use a Fungal Growth.<br />
+							<br />
+							Fungal Growth also stops other units from transitioning. Abilities that it affects are Siege Mode, Viking Transormation, Burrow, and other abilities that rely on some sort of movement or moving parts.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Neural Parasite</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/infestor/neuralparasite.png" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 110</td><td>Infestation Pit</td>
+								</tr>
+							</table><br />
+							<b>Range:</b> 7 (14 tether)<br />
+							<b>Duration:</b> 15<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 100</div><br />
+							<br />
+							<b>Information:</b> Neural Parasite allows the Infestor to take temporary control over any enemy unit. This can be cancelled at anytime by the Infestor. Otherwise the Infestor will let go after the duration of 15 seconds, if the unit moves out of 14 range, or the Infestor is killed.<br />
+							<br />
+							Neural Parasite is a very good ability because it not only adds a unit to your army for a while, it also removes it from the enemy.<br />
+							<br />
+							Neural Paraste is actually very integral to most late game Protoss vs Zerg matches. It is used to try and steal the Mothership from the Protoss player, preventing them from using Vortex on the Zerg army, and instead either wasting it, or splitting up the Protoss army with it.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Pathogen Glands</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/infestor/pathogenglands.gif" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 80</td><td>Infestation Pit</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> Pathogen Glands changes the starting energy of Infestors from 50 to 75. This is very useful as this allows Infestors to spawn ready to use a Fungal Growth.<br />
+							<br />
+							A common timing to look for is the 30 second mark on this research. Since Infestors take 50 seconds to spawn, and Pathogen Glands takes 80 seconds to research, at 30 seconds into the research you can start spawning infestors and they will hatch right as Pathogen Glands finishes.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Burrow</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/burrow.gif" /></td><td><img src="../images/minerals.gif" /> 100</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 100</td><td>Lair</td>
+								</tr>
+							</table><br />
+							<b>Cast Time:</b> <img class="timericon" src="../images/timer.gif" /> ~0.5<br />
+							<br />
+							<b>Information:</b> Upon research of burrow, most Zerg units are given the ability. Burrow times vary from unit to unit.<br />
+							<br />
+							You need a Lair to purchase burrow, but it can be researched at any Zerg production structure (Hatchery, Lair, or Hive).<br />
+							<br />
+							Burrowed units are invisible unless a detector comes into range or a spell that reveals burrowed units hits them.<br />
+							<br />
+							Burrow is useful for setting up traps or flanks against opponents without detection<br />
+							<br />
+							A Zerg player can Burrow to try and save units that would otherwise not make an escape if the opponent does not have detection.<br />
+							<br />
+							Infestor have the fastest burrow speed of ~0.5. The Average burrow speed of other Zerg units is ~1<br />
+							<br />
+							When burrowed units move, they shift the dirt around above them. It is difficult to see, like cloaking, but a skilled player can pick it out from their screen. This can alert more skilled players of their locations without actually having detection.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Unburrow</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon zergimgborder" src="../images/zerg/unburrow.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/zerg/zerggas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Comes with Burrow</td>
+								</tr>
+							</table><br />
+							<b>Cast Time:</b> <img class="timericon" src="../images/timer.gif" /> ~0.5<br />
+							<br />
+							<b>Information:</b> Unburrow is the second part that comes with the research of Burrow. It allows you to bring Burrowed units back up. Unburrow times vary from unit to unit.<br />
+							<br />
+							Infestors have the second fastest unburrow speed at ~0.5, right behind the Roach being the fastest. The average unburrow speed of other Zerg units is ~1.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+						
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />Evolved from the borbu matriarch, and in use by the zerg by 2503, infestors are one of the more insidious new additions to the Swarm, supporting hydralisks and roaches on the battlefield. Unlike most zerg strains, infestors have the ability to move while burrowed. They can spew a volatile plague over their targets with dire effects, and they have been known to ingest infested marines, carry them to a combat zone, and regurgitate them to fight for the Swarm.<br />
+						<br />
+						Perhaps the infestor’s most dangerous feature is the neural parasite, a symbiotic creature living within infestors that, when spat, attaches to an enemy and controls its mind for a short period of time. Seeing the immense potential of this parasite, the Queen of Blades carried out incubation of new strains capable of living longer outside of their host.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Infestor">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable zergtable" border="0">
+							<tr>
+								<td><a href="index.html">Zerg</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hatchery.html">Hatchery Tech</a></b></td><td><a href="drone.html">Drone</a></td><td><a href="overlord.html">Overlord</a></td><td><a href="queen.html">Queen</a></td><td><a href="zergling.html">Zergling</a></td><td><a href="baneling.html">Baneling</a></td><td><a href="roach.html">Roach</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="lair.html">Lair Tech</a></b></td><td><a href="overseer.html">Overseer</a></td><td><a href="hydralisk.html">Hydralisk</a></td><td><a href="mutalisk.html">Mutalisk</a></td><td><a href="corruptor.html">Corruptor</a></td><td><a href="infestor.html">Infestor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hive.html">Hive Tech</a></b></td><td><a href="ultralisk.html">Ultralisk</a></td><td><a href="broodlord.html">Broodlord</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b>Spawned Units</b></td><td><a href="larva.html">Larva</a></td><td><a href="changeling.html">Changeling</a></td><td><a href="infestedterran.html">Infested Terran</a></td><td><a href="broodling.html">Broodling</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hatchery.html">Hatchery Buildings</a></b></td><td><a href="extractor.html">Extractor</a></td><td><a href="spawningpool.html">Spawning Pool</a></td><td><a href="banelingnest.html">Baneling Nest</a></td><td><a href="roachwarren.html">Roach Warren</a></td><td><a href="evolutionchamber.html">Evolution Chamber</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="lair.html">Lair Buildings</a></b></td><td><a href="hydraliskden.html">Hydralisk Den</a></td><td><a href="spire.html">Spire</a></td><td><a href="infestationpit.html">Infestation Pit</a></td><td><a href="nydusnetwork.html">Nydus Network</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b><a href="hive.html">Hive Buildings</a></b></td><td><a href="ultraliskcavern.html">Ultralisk Cavern</a></td><td><a href="greaterspire.html">Greater Spire</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable zergtable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="spinecrawler.html">Spine Crawler</a></td><td><a href="sporecrawler.html">Spore Crawler</a></td><td><a href="creeptumor.html">Creep Tumor</a></td><td><a href="nydusworm.html">Nydus Worm</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

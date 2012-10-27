@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Production</li>
+					<li id="tab3">Abilities/Upgrades</li>
+					<li id="tab4">Strategy</li>
+					<li id="tab5">Lore</li>
+					<li id="tab6">Related</li>
+					<div id="name">Terran Starport</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/starport/starport.png" /> <img class="portrait" src="../images/terran/adjutant.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 1300<br />
+							<b>Armor:</b> 1 |<br />
+							3 with <img class="miniicon terranimgborder" src="../images/terran/upgrades/buildingarmor.gif" /> Building Armor<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 37.5<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 25<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 50<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 0/0</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> None<br />
+							<b>Damage:</b> 0<br />
+							<b>Attacks:</b> 0<br />
+							<b>Cooldown:</b> 0<br />
+							<b>Targets:</b> None<br />
+							<b>Attack Range:</b> 0
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 0.9375<br />
+							<b>Acceleration:</b> 1.3125<br />
+							<b>Collision Radius:</b> 1.625
+						</div>
+						<div class="sleft">
+							<div class="sheader">No Weapon Upgrades</div>
+							<b>Researched At:</b> Nowhere<br />
+							<b>Requirements:</b> Nothing<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b>Level 1</b></td><td><b>Level 2</b></td><td><b>Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 150<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 100<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 0<br />
+							<b>Produced From:</b> SCV</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 50<br />
+							<b>Requirements:</b> Factory
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 9<br />
+							<b>Unit Type:</b> Armored, Mechanical, Structure, Ground (Air if lifted)
+						</div>
+						<div class="sleft">
+							<div class="sheader">No Armor Upgrades</div>
+							<b>Researched At:</b> Nowhere<br />
+							<b>Requirements:</b> Nothing<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b>Level 1</b></td><td><b>Level 2</b></td><td><b>Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td><td><img src="../images/minerals.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>0</td><td>0</td><td>0</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>1</td><td>1</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+						
+					<!-- Buildable stuff -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Units</div>
+							<table border="1">
+								<tr>
+									<td><b>Unit</b></td><td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Time</b></td><td><b>Supply</b></td><td><b>Requirements</b></td>
+								</tr>
+								<tr>
+									<td><a href="medivac.html">Medivac</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/starport/medivac.jpg" /></td><td><img src="../images/minerals.gif"> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 42</td><td><img src="../images/terran/supplyterran.gif" /> 2</td><td>Starport</td>
+								</tr>
+								<tr>
+									<td><a href="viking.html">Viking</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/starport/viking.jpg" /></td><td><img src="../images/minerals.gif"> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 75</td><td><img class="timericon" src="../images/timer.gif" /> 42</td><td><img src="../images/terran/supplyterran.gif" /> 2</td><td>Starport</td>
+								</tr>
+								<tr>
+									<td><a href="banshee.html">Banshee</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/starport/banshee.jpg" /></td><td><img src="../images/minerals.gif"> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/timer.gif" /> 60</td><td><img src="../images/terran/supplyterran.gif" /> 3</td><td>Tech Lab Connected</td>
+								</tr>
+								<tr>
+									<td><a href="raven.html">Raven</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/starport/raven.jpg" /></td><td><img src="../images/minerals.gif"> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 200</td><td><img class="timericon" src="../images/timer.gif" /> 60</td><td><img src="../images/terran/supplyterran.gif" /> 2</td><td>Tech Lab Connected</td>
+								</tr>
+								<tr>
+									<td><a href="battlecruiser.html">Battlecruiser</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/starport/battlecruiser.jpg" /></td><td><img src="../images/minerals.gif"> 400</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 300</td><td><img class="timericon" src="../images/timer.gif" /> 90</td><td><img src="../images/terran/supplyterran.gif" /> 6</td><td>Tech Lab & Fusion Core</td>
+								</tr>
+							</table><br />
+							<div class="sheader">Unit Information</div>
+							<b>Medivac:</b> Air transport. Heals nearby biological units.<br />
+							<br />
+							<b>Viking:</b> Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units. Can attack air units.<br />
+							<br />
+							<b>Banshee:</b> Tactical-strike aircraft. Can attack ground units.<br />
+							<br />
+							<b>Raven:</b> Aerial support unit. Can use Auto-Turret, Point Defense Drone, and be upgraded to use Seeker Missile. Detector.<br />
+							<br />
+							<b>Battlecruiser:</b> Powerful warship. Can attack ground and air units.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Add-Ons</div>
+							<table border="1">
+								<tr>
+									<td><b>Add-On</b></td><td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Time</b></td><td><b>Requirements</b></td>
+								</tr>
+								<tr>
+									<td><a href="reactor.html">Reactor</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/upgrades/reactor.jpg" /> </td><td><img src="../images/minerals.gif"> 50</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 50</td><td><img class="timericon" src="../images/timer.gif" /> 50</td><td>Starport</td>
+								</tr>
+								<tr>
+									<td><a href="techlab.html">Tech Lab</a></td><td><img class="abilityicon terranimgborder" src="../images/terran/upgrades/techlab.jpg" /> </td><td><img src="../images/minerals.gif"> 50</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 25</td><td><img class="timericon" src="../images/timer.gif" /> 25</td><td>Starport</td>
+								</tr>
+							</table><br />
+							<div class="sheader">Add-On Information</div>
+							<b>Reactor:</b> The Reactor on a Starport allows it to create two Medivacs and/or Vikings at a time.<br />
+							<br />
+							<b>Tech Lab:</b> The Tech Lab on a Starport allows it to create Banshees, Ravens and Battlecruisers (with a Fusion Core). It also allows the Terran player to research Caduceus Reactor (Medivac), Corvid Reactor (Raven), Durable Materials (Raven), Seeker Missile (Raven), and Cloaking Field (Banshee). The information for each upgrade is on the corresponding unit and the Tech-Lab pages.
+						</div>
+					</div>
+					
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab3">
+						<div class="scenter">
+							<div class="sheader">Building Armor</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/upgrades/buildingarmor.gif" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 140</td><td>Engineering Bay</td>
+								</tr>
+							</table><br />
+							<b>Information:</b> Building Armor increases the armor of all Terran buildings by 2. This includes the Point Defense Drone and Auto-Turret as well.
+						</div>
+						<div class="scenter">
+							<div class="sheader">Lift off</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/upgrades/liftoff.gif" /></td><td><img src="../images/minerals.gif" /> 0</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 0</td><td><img class="timericon" src="../images/timer.gif" /> 0</td><td>Already Researched</td>
+								</tr>
+							</table><br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 2<br />
+							<br />
+							<b>Information:</b> Most Terran buildings are allowed to lift off and relocate. This is particularly useful for swapping add-ons between Terran Production Facilities. It takes a building two seconds to lift off or land.<br />
+							<br />
+							Once a building has been lifted off, it becomes a flying unit and is able to move at a speed of 0.9375.<br />
+							<br />
+							In order for a building to land back down, it requires nothing to be below it when attempting to land. Burrowed units and creep will stop a building from being able to land as well.
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab4">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab5">
+						
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />The starport is an advanced terran structure, responsible for the construction and maintenance of all space-faring vehicles and starships. Along with featuring a number of landing pads, a Control Tower or Tech Lab may be attached to coordinate the upgrading and construction of advanced vessels.<br />
+						<br />
+						Starports can function both terrestrially and as space stations. Some Starports even feature a flight school.<br />
+						<br />
+						After the Brood Wars, the Terrans replaced the Control Tower with the Tech Lab. This gave the Terrans much more versatility to adapt their buildings for the need required at a certain time. The use of one add-on between multiple structures also reduces resources needed, as the Terrans could now use the same Tech Lab on multiple buildings instead of creating a seperate add-on for each.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Starport">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab6">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

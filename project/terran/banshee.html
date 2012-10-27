@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Terran Banshee</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/banshee/banshee.png" /> <img class="portrait" src="../images/terran/banshee/bansheeface1.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 140<br />
+							<b>Armor:</b> 0<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 37.5<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 25<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 60<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 50/200</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0.5625 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>Name:</b> Backlash Rockets <br />
+							<b>Damage:</b> 12<br />
+							<b>Attacks:</b> 2<br />
+							<b>Cooldown:</b> 1.25<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 6
+						</div>
+						<img class="portrait2" src="../images/terran/banshee/bansheeface2.jpg" />
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 2.75<br />
+							<b>Acceleration:</b> 3.25<br />
+							<b>Collision Radius:</b> 0.75
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Weapon Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sweapons3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>13 (x2)</td><td>14 (x2)</td><td>15 (x2)</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 150<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 100<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 3<br />
+							<b>Produced From:</b> Starport with Tech Lab</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 60<br />
+							<b>Requirements:</b> Starport with Tech Lab
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 10<br />
+							<b>Unit Type:</b> Light, Mechanical, Air
+						</div>
+						<div class="sleft">
+							<div class="sheader">Air Armor Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/sarmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 150</td><td><img src="../images/minerals.gif" /> 225</td><td><img src="../images/minerals.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 225</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 300</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>1</td><td>2</td><td>3</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+						
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">Cloaking Field</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/ghost/cloak.png" /></td><td><img src="../images/minerals.gif" /> 200</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 200</td><td><img class="timericon" src="../images/timer.gif" /> 110</td><td>Tech Lab on Starport</td>
+								</tr>
+							</table><br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 25 Inital, 0.9/s after</div><br />
+							<br />
+							<b>Information:</b> Once Cloaking Field has been researched the Banshee is allowed to cloak itself. Cloak costs 25 energy initally, and then 0.9/s after.<br />
+							<br />
+							Once the ability is active, the Banshee is considered cloaked, and can only be revealed by detectors or effects that reveal cloaking.<br />
+							<br />
+							Cloaked units create a shimmering effect over enviorment to let opponents know where they are. The shimmer is difficult to see, but a skilled opponent can spot the shimmer effect to know where the cloaked unit is. 
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+						
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Design</li>
+							<li id="loretab2">History</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />The Banshees were heavily optimized for its intended role. Armament was limited to air-to-ground Backlash rockets. The aircraft was powered by relatively low-thrust and inexpensive turbofans capable of operating only in an atmosphere, or allowing the aircraft to be dropped from orbit; the engines were incapable of attaining escape velocity. However, Banshees are outfitted with special propulsion systems only used in space.<br />
+						<br />
+						The Banshee received cloaking devices after entering service with militias and guerilla forces. Salvaged cloaking devices from Wraiths allowed the Banshee to become an effective raider. By the Second Great War, the Dominion Armed Forces were equipping their Banshees with the DN51 cloak generator; at the time, the DN51 was such a sophisticated example of Dominion technology that special teams were deployed to recover them from crashed aircraft. Wolfe Industries developed an upgrade that embedded cross-spectrum, light dampening, materials into the hull; this enhanced the cloaking effect by allowing it to be maintained with less power.<br />
+						<br />
+						Additional armament options were also developed. Kel-Morian Banshees were armed with rapid-firing projectile weaponry capable of striking aerial targets. By the Second Great War, Banshees could carry the Shockwave missile battery, which bombarded a longer linear area ahead of the aircraft, rather than just a smaller circular point as with the default Backlashes.</p></div>
+						
+						<div class="dblorepage" id="dbloretab2"<p><br />The Banshee was designed by Procyon Industries to meet requirements from the Terran Dominion for a dedicated ground attack aircraft for counter-insurgency operations. The Banshee was an entirely new design; adapting an existing design was unlikely to be satisfactory. After much experimentation, the Banshee was in use by the Dominion by 2502, and within the same year, the Kel-Morian Combine. It has proven very successful in service.<br />
+						<br />
+						Initial deployment within the Dominion was disappointing. The aircraft was judged as too inflexible, and many were relegated to minor roles with backwater militias. Overtime, ease of interstellar deployment, the ability to deliver strikes over difficult terrain, and the addition of the cloaking device, led to more widespread deployment within the Dominion. The Banshee gained a reputation as a Dominion terror weapon due to collateral damage caused in urban combat. Guerilla and resistance forces also found the Banshee useful against the Dominion. Banshees were used as light-infantry support, and could operated with Vikings as air cavalry.<br />
+						<br />
+						Despite its original purpose as a counter-insurgency weapon, the Banshee went on to be used against protoss, zerg, and terran front line forces.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/AH/G-24_Banshee">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

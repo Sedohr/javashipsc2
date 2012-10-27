@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="terran/index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="forums.html">Forums</a></li>
+					<li id="5"><a href="contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content mainbackgrounddb">
+				
+				<div class="dbtopper"> Click on a race's button to begin browsing through the database!</div>
+				
+				<!-- Protoss -->
+				<p><div class="dbdropdown" id="menutoss"><button type="button">Protoss</button></div><br />
+				<div id="tablemenutoss"><table class="dropdowntable toptable protosstable" border="0">
+					<tr>
+						<td><a href="protoss/index.html">Protoss</a></td>
+					</tr>
+				</table><br />
+				<br />
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+				</table>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b><a href="protoss/nexus.html">Nexus</a></b></td><td><a href="protoss/probe.html">Probe</a></td><td><a href="protoss/mothership.html">Mothership</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b><a href="protoss/gateway.html">Gatway/Warpgate</a></b></td><td><a href="protoss/zealot.html">Zealot</a></td><td><a href="protoss/stalker.html">Stalker</a></td><td><a href="protoss/sentry.html">Sentry</a></td><td><a href="protoss/hightemplar.html">High Templar</a></td><td><a href="protoss/darktemplar.html">Dark Templar</a></td><td><a href="protoss/archon.html">Archon</a></td>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b><a href="protoss/robofacility.html">Robotics Facility</a></b></td><td><a href="protoss/observer.html">Observer</a></td><td><a href="protoss/immortal.html">Immortal</a></td><td><a href="protoss/colossus.html">Colossus</a></td><td><a href="protoss/warpprism.html">Warp Prism</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b><a href="protoss/stargate.html">Stargate</b></td><td><a href="protoss/phoenix.html">Phoenix</a></td><td><a href="protoss/voidray.html">Void Ray</a></td><td><a href="protoss/carrier.html">Carrier</a></td><td><a href="protoss/interceptor.html">Interceptor</a></td>
+					</tr>
+				</table><br />
+				<br />
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+					</tr>
+				</table>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b>Basic Buildings</b></td><td><a href="protoss/nexus.html">Nexus</a></td><td><a href="protoss/pylon.html">Pylon</a></td><td><a href="protoss/assimilator.html">Assimilator</a></td><td><a href="protoss/gateway.html">Gateway/Warpgate</a></td><td><a href="protoss/forge.html">Forge</a></td><td><a href="protoss/cannon.html">Photon Cannon</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b>Advanced Buildings</b></td><td><a href="protoss/cyberneticscore.html">Cybernetics Core</a></td><td><a href="protoss/robofacility.html">Robotics Facility</a></td><td><a href="protoss/twilightcouncil.html">Twilight Council</a></td><td><a href="protoss/stargate.html">Stargate</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable protosstable" border="0">
+					<tr>
+						<td><b>Top Tier Buildings</b></td><td><a href="protoss/robobay.html">Robotics Bay</a></td><td><a href="protoss/templararchives.html">Templar Archives</a></td><td><a href="protoss/darkshrine.html">Dark Shrine</a></td><td><a href="protoss/fleetbacon.html">Fleet Beacon</a></td>
+					</tr>
+				</table><br /></div></p>
+				
+				<!-- Terran -->
+				<p><div class="dbdropdown" id="menuterran"><button type="button">Terran</button></div><br />
+				<div id="tablemenuterran"><table class="dropdowntable toptable terrantable" border="0">
+					<tr>
+						<td><a href="terran/index.html">Terran</a></td>
+					</tr>
+				</table><br />
+				<br />
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b><a href="terran/commandcenter.html">Command Center</a></b></td><td><a href="terran/scv.html">SCV</a></td><td><a href="terran/mule.html">Mule</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b><a href="terran/barracks.html">Barracks</a></b></td><td><a href="terran/marine.html">Marine</a></td><td><a href="terran/marauder.html">Marauder</a></td><td><a href="terran/ghost.html">Ghost</a></td><td><a href="terran/reaper.html">Reaper</a></td>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b><a href="terran/factory.html">Factory</a></b></td><td><a href="terran/hellion.html">Hellion</a></td><td><a href="terran/siegetank.html">Siege Tank</a></td><td><a href="terran/thor.html">Thor</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b><a href="terran/starport.html">Starport</a></b></td><td><a href="terran/medivac.html">Medivac</a></td><td><a href="terran/viking.html">Viking</a></td><td><a href="terran/banshee.html">Banshee</a></td><td><a href="terran/raven.html">Raven</a></td><td><a href="terran/battlecruiser.html">Battlecruiser</a></td>
+					</tr>
+				</table><br />
+				<br />
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b>Basic Buildings</b></td><td><a href="terran/commandcenter.html">Command Center</a></td><td><a href="terran/orbitalcommand.html">Orbital Command</a></td><td><a href="terran/supplydepot.html">Supply Depot</a></td><td><a href="terran/refinery.html">Refinery</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b>Defensive Buildings</b></td><td><a href="terran/planetary.html">Planetary Fortress</a></td><td><a href="terran/bunker.html">Bunker</a></td><td><a href="terran/missileturret.html">Missile Turret</a></td><td><a href="terran/sentrytower.html">Sentry Tower</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b>Infantry Buildings</b></td><td><a href="terran/barracks.html">Barracks</a></td><td><a href="terran/engineeringbay.html">Engineering Bay</a></td><td><a href="terran/ghostacademy.html">Ghost Academy</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b>Mechanical Buildings</b></td><td><a href="terran/factory.html">Factory</a></td><td><a href="terran/starport.html">Starport</a></td><td><a href="terran/armory.html">Armory</a></td><td><a href="terran/fusioncore.html">Fusion Core</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable terrantable" border="0">
+					<tr>
+						<td><b>Add-ons</b></td><td><a href="terran/autoturret.html">Auto-Turret</a></td><td><a href="terran/pdd.html">Point Defense Drone</a></td><td><a href="terran/techlab.html">Tech Lab</a></td><td><a href="terran/reactor.html">Reactor</a></td>
+					</tr>
+				</table><br /></div></p>
+				
+				<!-- Zerg -->
+				<p><div class="dbdropdown" id="menuzerg"><button type="button">Zerg</button></div><br />
+				<div id="tablemenuzerg"><table class="dropdowntable toptable zergtable" border="0">
+					<tr>
+						<td><a href="zerg/index.html">Zerg</a></td>
+					</tr>
+				</table><br />
+				<br />
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b><a href="zerg/hatchery.html">Hatchery Tech</a></b></td><td><a href="zerg/drone.html">Drone</a></td><td><a href="zerg/overlord.html">Overlord</a></td><td><a href="zerg/queen.html">Queen</a></td><td><a href="zerg/zergling.html">Zergling</a></td><td><a href="zerg/baneling.html">Baneling</a></td><td><a href="zerg/roach.html">Roach</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b><a href="zerg/lair.html">Lair Tech</a></b></td><td><a href="zerg/overseer.html">Overseer</a></td><td><a href="zerg/hydralisk.html">Hydralisk</a></td><td><a href="zerg/mutalisk.html">Mutalisk</a></td><td><a href="zerg/corruptor.html">Corruptor</a></td><td><a href="zerg/infestor.html">Infestor</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b><a href="zerg/hive.html">Hive Tech</a></b></td><td><a href="zerg/ultralisk.html">Ultralisk</a></td><td><a href="zerg/broodlord.html">Broodlord</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b>Spawned Units</b></td><td><a href="zerg/larva.html">Larva</a></td><td><a href="zerg/changeling.html">Changeling</a></td><td><a href="zerg/infestedterran.html">Infested Terran</a></td><td><a href="zerg/broodling.html">Broodling</a></td>
+					</tr>
+				</table><br />
+				<br />
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b><a href="zerg/hatchery.html">Hatchery Buildings</a></b></td><td><a href="zerg/extractor.html">Extractor</a></td><td><a href="zerg/spawningpool.html">Spawning Pool</a></td><td><a href="zerg/banelingnest.html">Baneling Nest</a></td><td><a href="zerg/roachwarren.html">Roach Warren</a></td><td><a href="zerg/evolutionchamber.html">Evolution Chamber</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b><a href="zerg/lair.html">Lair Buildings</a></b></td><td><a href="zerg/hydraliskden.html">Hydralisk Den</a></td><td><a href="zerg/spire.html">Spire</a></td><td><a href="zerg/infestationpit.html">Infestation Pit</a></td><td><a href="zerg/nydusnetwork.html">Nydus Network</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b><a href="zerg/hive.html">Hive Buildings</a></b></td><td><a href="zerg/ultraliskcavern.html">Ultralisk Cavern</a></td><td><a href="zerg/greaterspire.html">Greater Spire</a></td>
+					</tr>
+				</table>
+				<table class="dropdowntable zergtable" border="0">
+					<tr>
+						<td><b>Defensive Buildings</b></td><td><a href="zerg/spinecrawler.html">Spine Crawler</a></td><td><a href="zerg/sporecrawler.html">Spore Crawler</a></td><td><a href="zerg/creeptumor.html">Creep Tumor</a></td><td><a href="zerg/nydusworm.html">Nydus Worm</a></td>
+					</tr>
+				</table><br /></div></p>
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

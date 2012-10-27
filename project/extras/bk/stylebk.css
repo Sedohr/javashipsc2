@@ -1,0 +1,110 @@
+/* Main document settings */
+body {
+	background-image:url(images/repeating.png);
+	background-repeat:repeat;
+	font:normal 14px Arial;
+	color:#000000;
+}
+/* Actual website viewing area */
+.wrapper {
+	width:960px;
+	margin:0 auto;
+	background-color:#FFFFFF;
+	border-left:solid;
+	border-right:solid;
+	border-color:#A0A0A0;
+	border-width:2px;
+}
+/* Main navigation */
+.topmenu {
+	text-align:right;
+	height:40px;
+	border-top:solid;
+	border-bottom:solid;
+	border-color:#000000;
+	border-width:2px;
+	position:relative;
+}
+
+.topmenu a:link {
+	text-decoration:none;
+	color:#000000;
+}
+
+.topmenu a:visited {
+	color:#000000
+}
+
+.topmenu  li {
+	border:solid;
+	border-width:0 0 0 1px;
+	list-style-type:none;
+	display:inline-block;
+	width:125px;
+	text-align:center;
+}
+
+.topmenu li:hover {
+	background-color:#E8E8E8;
+}
+/* First submenu */
+.topmenu .submenu {
+	text-align:center;
+	display:none;
+	position:absolute;
+	margin-left:-100px;
+}
+
+.submenu ul {
+
+}
+
+.submenu li {
+	border:solid;
+	border-width:1px;
+	display:block;
+	padding:0;
+	z-index:10;
+	background-color:#F8F8F8;
+	width:125px;
+}
+/* Second Submenu */
+.topmenu .submenu .subsubmenu{
+	text-align:center;
+	display:none;
+	position:absolute;
+	margin-top:-15px;
+	margin-left:22px;
+}
+
+.subsubmenu li {
+	border:solid;
+	border-width:1px;
+	display:block;
+	padding:0;
+	z-index:10;
+	background-color:#F0F0F0;
+	width:125px;
+}
+/* Main part of page */
+.content {
+	text-align:center;
+}
+
+.footer {
+	background-color:#D8D8D8;
+	clear:both;
+	text-align:center;
+	padding: 10px 15px;
+	border-top:dashed;
+	border-bottom:solid;
+	border-width:2px;
+	border-color:#A0A0A0;
+}
+/* Extra tidbits */
+#menutext {
+	text-align:left;
+	font-size:18px;
+	font-weight:bold;
+	float:left;
+}

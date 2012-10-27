@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../jquery.js"></script>
+		<script src="../script.js"></script>
+		<title>Menu test site</title>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="topmenu"><div id="menutext">Welcome to "insert site"!</div>
+				<ul> 
+					<li id="1"><a href="../index.html">Home</a><br />
+						<ul class="submenu" id="sub1">
+							<li>test 1</li>
+							<li>test 2</li>
+						</ul></li>
+					<li id="2"><a href="../about.html">About</a><br />
+						<ul class="submenu" id="sub2">
+							<li>test 3</li>
+							<li>test 4</li>
+						</ul></li>
+					<li id="3"><a href="../database.html">Unit Database</a><br />
+						<ul class="submenu" id="sub3">
+							<li id="31"><a href="../protoss/index.html">Protoss</a><br />
+								<ul class="subsubmenu" id="sub31">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="32"><a href="index.html">Terran</a><br />
+								<ul class="subsubmenu" id="sub32">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+							<li id="33"><a href="../zerg/index.html">Zerg</a><br />
+								<ul class="subsubmenu" id="sub33">
+									<li>Units</li>
+									<li>Buildings</li>
+								</ul></li>
+						</ul></li>
+					<li id="4"><a href="../forums.html">Forums</a></li>
+					<li id="5"><a href="../contact.html">Contact</a><br />
+						<ul class="submenu" id="sub5">
+							<li>test 5</li>
+							<li>test 6</li>
+						</ul></li>
+				</ul></div>
+			
+			<div class="content">
+				<ul class="tabs">
+					<li class="selected" id="tab1">Stats</li>
+					<li id="tab2">Abilities/Upgrades</li>
+					<li id="tab3">Strategy</li>
+					<li id="tab4">Lore</li>
+					<li id="tab5">Related</li>
+					<div id="name">Terran Thor</div>
+				</ul>
+					
+				
+				<div class="dbarea">
+					<!-- Stats Tab -->
+					<div class="dbpage" id="dbtab1">
+						<img class="picture" src="../images/terran/thor/thor.png" /> <img class="portrait" src="../images/terran/thor/thorface.jpg" />
+						<div class="sright">
+							<div class="sheader">Life Stats</div>
+							<b>Health:</b> 400<br />
+							<b>Armor:</b> 1<br />
+							<b>Mineral Repair Cost:</b> <img src="../images/minerals.gif" /> 75<br />
+							<b>Gas Repair Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 50<br />
+							<b>Repair Time:</b> <img class="timericon" src="../images/timer.gif" /> 60<br />
+							<b><div class="energy">Energy:</b> <img class="timericon" src="../images/energy.gif" /> 50/200</div><br />
+							<b><div class="energy">Energy Regen:</b> <img class="timericon" src="../images/energy.gif" /> 0.5625 per second</div>
+						</div>
+						<div class="sright">
+							<div class="sheader">Weapon Stats</div>
+							<b>-Attack 1-</b><br />
+							<b>Name:</b> Thor's Hammer Particle Beams <br />
+							<b>Damage:</b> 30<br />
+							<b>Attacks:</b> 2<br />
+							<b>Cooldown:</b> 1.28<br />
+							<b>Targets:</b> Ground only<br />
+							<b>Attack Range:</b> 7<br />
+							<br />
+							<b>-Attack 2-</b><br />
+							<b>Name:</b> Javelin Missile Launchers<br />
+							<b>Damage:</b> 6 (12 vs light) (splash)<br />
+							<b>Attack:</b> 4<br />
+							<b>Cooldown:</b> 3<br />
+							<b>Targets:</b> Air only<br />
+							<b>Attack Range:</b> 10
+						</div>
+						<div class="sleft">
+							<div class="sheader">Vehicle Weapon Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/vweapons1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/vweapons2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/vweapons3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Damage Bonus</b></td><td>+3 | +1 (+2)</td><td>+6 | +2 (+4)</td><td>+9 | +3 (+6)</td>
+								</tr>
+								<tr>
+									<td><b>Total Damage</b></td><td>33 | 7 (14)</td><td>36 | 8 (16)</td><td>39 | 9 (18)</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Movement Stats</div>
+							<b>Speed:</b> 1.875<br />
+							<b>Acceleration:</b> 1000<br />
+							<b>Collision Radius:</b> 0.8125
+						</div>
+						<div class="sright">
+							<div class="sheader">Production Stats</div>
+							<b>Mineral Cost:</b> <img src="../images/minerals.gif" /> 300<br />
+							<b>Vespene Cost:</b> <img class="timericon" src="../images/terran/terrangas.gif" /> 200<br />
+							<b>Supply:</b> <img src="../images/terran/supplyterran.gif" /> 6<br />
+							<b>Produced From:</b> Factory with Tech Lab</br >
+							<b>Build Time:</b> <img class="timericon" src="../images/timer.gif" /> 60<br />
+							<b>Requirements:</b> Armory
+						</div>
+						<div class="sleft">
+							<div class="sheader">Vehicle Armor Upgrades</div>
+							<b>Researched At:</b> Armory<br />
+							<b>Requirements:</b> Levels 2-3 requires Armory<br />
+							<table border="1">
+								<tr>
+									<td><b>Level</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/varmor1.gif" /> Level 1</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/varmor2.gif" /> Level 2</b></td><td><b><img class="upgradeicon terranimgborder" src="../images/terran/upgrades/varmor3.gif" /> Level 3</b></td>
+								</tr>
+								<tr>
+									<td><b>Minerals</b></td><td><img src="../images/minerals.gif" /> 100</td><td><img src="../images/minerals.gif" /> 175</td><td><img src="../images/minerals.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Vespene Gas</b></td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 100</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 175</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 250</td>
+								</tr>
+								<tr>
+									<td><b>Time</b></td><td><img class="timericon" src="../images/timer.gif" /> 160</td><td><img class="timericon" src="../images/timer.gif" /> 190</td><td><img class="timericon" src="../images/timer.gif" /> 220</td>
+								</tr>
+								<tr>
+									<td><b>Armor Bonus</b></td><td>+1</td><td>+2</td><td>+3</td>
+								</tr>
+								<tr>
+									<td><b>Total Armor</b></td><td>2</td><td>3</td><td>4</td>
+								</tr>
+							</table>
+						</div>
+						<div class="sright">
+							<div class="sheader">Miscellaneous Stats</div>
+							<b>Sight Range:</b> 11<br />
+							<b>Medivac Size:</b> 8<br />
+							<b>Unit Type:</b> Armored, Mechanical, Massive, Ground
+						</div>
+					</div>
+					
+					<!-- Abilities -->
+					<div class="dbpage" id="dbtab2">
+						<div class="scenter">
+							<div class="sheader">250mm Strike Cannons</div>
+							<table border="1">
+								<tr>
+									<td><b>Icon</b></td><td><b>Minerals</b></td><td><b>Vespene Gas</b></td><td><b>Research Time</b></td><td><b>Researched At</b></td>
+								</tr>
+								<tr>
+									<td><img class="abilityicon terranimgborder" src="../images/terran/thor/250mmstrikecannons.png" /></td><td><img src="../images/minerals.gif" /> 150</td><td><img class="timericon" src="../images/terran/terrangas.gif" /> 150</td><td><img class="timericon" src="../images/timer.gif" /> 110</td><td>Tech Lab on Factory</td>
+								</tr>
+							</table><br />
+							<b>Duration:</b> <img class="timericon" src="../images/timer.gif" /> 2+6+2 (10)<br />
+							<b>Range:</b> 7<br />
+							<b><div class="energy">Energy Cost:</b> <img class="timericon" src="../images/energy.gif" /> 150</div><br />
+							<b>Damage:</b> 500 over 6s<br />
+							<br />
+							<b>Information:</b> 250mm Strike Cannons allows the Thor to use the large weapons on its back. It costs 150 energy, takes two seconds to activate them, 6 seconds to attack, and then 2 seconds to de-activate them.<br />
+							<br />
+							The Thor is immobile while using this ability, but it also stuns the target it attacks for the 6 seconds while the attack is actually going off.<br />
+							<br />
+							This ability ignores the Hardened Shield effect from Immortals, allowing it to stun and kill an Immortal with this ability.<br />
+							<br />
+							Buildings on the ground can be targeted with this ability
+						</div>
+					</div>
+					
+					<!-- Strategy Tab -->
+					<div class="dbpage" id="dbtab3">
+						<p>If you have any suggestions for more strategies, go ahead and post on the forums 'here'!</p>
+						<p><div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							<br />
+							When Zealots have a +1 weapon advantage versus Zerglings, they will kill Zerglings in two attacks instead of three. This makes Zealots very effecient against Zerglings until the zerg catches up in armor upgrades.<br />
+							<br />
+							Because of this, there are a handful of timing attack that take advantage of the effecient +1 weapon zealots, forcing the zerg to make spines, roaches, or some other unit than zerglings unless the zerg wants to trade inefficiently.</p>
+						</div>
+						<div class="dbstratsvid">
+							<iframe width="418" height="313" src="http://www.youtube.com/embed/UvwB8Es8sJQ" frameborder="0" allowfullscreen></iframe>
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div><br />
+						<div class="dbstrats">
+							<p><b>+1 Weapons vs Zerglings</b><br />
+							Sum text about how gosu this is</p>
+						</div>
+						<div class="dbstratsvid">
+							
+						</div></p>
+					</div>
+					
+					<!-- Lore Tab -->
+					<div class="dbpage" id="dbtab4">
+					
+						<ul class="loretabs">
+							<li class="selected" id="loretab1">Overview</li>
+							<li id="loretab2">Weapons</li>
+							<li id="loretab3">History</li>
+						</ul>
+						
+						<div class="dblorepage" id="dbloretab1"><p><br />Named after the Norse god of thunder, the thor is a class of siege-walker. Thors only require a single crew member, and those in service during the Second Great War were more maneuverable than the Odin incarnation.</p></div>
+						
+						<div class="dblorepage" id="dbloretab2"><p><br />The thor is equipped with different types of heavy weapons. It is armed with four "Thor's Hammer" particle accelerators (two are fired from each arm) and once possessed Javelin missile launchers for use against aerial opponents, though these were phased out during the Second Great War.<br />
+						<br />
+						On its back reside four 250mm Strike Cannons.The thor is equipped with different types of heavy weapons. It is armed with four "Thor's Hammer" particle accelerators (two are fired from each arm) and once possessed Javelin missile launchers for use against aerial opponents, though these were phased out during the Second Great War. On its back reside four 250mm Strike Cannons.<br />
+						<br />
+						It can optionally be outfitted with 330mm barrage cannons and ATVX has developed an "immortality protocol," allowing a thor to repair itself in the field as long as its hull remains intact.</p></div>
+						
+						<div class="dblorepage" id="dbloretab3"><p><br />The thor stemmed from the Terran Dominion Thor Project, a program that resulted in the creation of the Odin. By 2502, the thor had been developed and had become public enough that the Dominion's best thor operator, Sandin Forst, became famous. Forst took part in an anti-zerg operation on Mar Sara that year, where he vanished. During the Second Great War, the Terran Dominion utilized the thor in defending areas such as New Folsom Prison.<br />
+						<br />
+						The Odin, a particularly powerful prototype, was developed by 2503. A Protectorate shadowguard stole intelligence on the Odin, which was later taken to Valhalla.<br />
+						<br />
+						The Raiders' chief engineer Rory Swann reverse-engineered a schematic of the thor from examining the Odin prototype. The Raiders received their first thors during the attack on the UNN Studios.</p></div>
+						
+						<div class="sheader"><br />Source Information</div>
+						<p>Text information from the <a href="http://starcraft.wikia.com/wiki/Thor">Starcraft Wiki</a>.<br />
+						<br />
+						Photo 1 created by Saejin Oh. Copyright: UDON Entertainment.<br />
+						<br />
+						Photo 2 created by Samwise Didier. Copyright: Blizzard Entertainment.</p>
+						
+					</div>
+					
+					<!-- Related Tab -->
+					<div class="dbpage" id="dbtab5">
+						<p><table class="dropdowntable toptable terrantable" border="0">
+							<tr>
+								<td><a href="index.html">Terran</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Units</td><td class="runitheader"></td>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="commandcenter.html">Command Center</a></b></td><td><a href="scv.html">SCV</a></td><td><a href="mule.html">Mule</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="barracks.html">Barracks</a></b></td><td><a href="marine.html">Marine</a></td><td><a href="marauder.html">Marauder</a></td><td><a href="ghost.html">Ghost</a></td><td><a href="reaper.html">Reaper</a></td>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="factory.html">Factory</a></b></td><td><a href="hellion.html">Hellion</a></td><td><a href="siegetank.html">Siege Tank</a></td><td><a href="thor.html">Thor</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b><a href="starport.html">Starport</a></b></td><td><a href="medivac.html">Medivac</a></td><td><a href="viking.html">Viking</a></td><td><a href="banshee.html">Banshee</a></td><td><a href="raven.html">Raven</a></td><td><a href="battlecruiser.html">Battlecruiser</a></td>
+							</tr>
+						</table><br />
+						<br />
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td class="lunitheader"></td><td class="unitheader">Structures</td><td class="runitheader"></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Basic Buildings</b></td><td><a href="commandcenter.html">Command Center</a></td><td><a href="orbitalcommand.html">Orbital Command</a></td><td><a href="supplydepot.html">Supply Depot</a></td><td><a href="refinery.html">Refinery</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Defensive Buildings</b></td><td><a href="planetary.html">Planetary Fortress</a></td><td><a href="bunker.html">Bunker</a></td><td><a href="missileturret.html">Missile Turret</a></td><td><a href="sensortower.html">Sensor Tower</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Infantry Buildings</b></td><td><a href="barracks.html">Barracks</a></td><td><a href="engineeringbay.html">Engineering Bay</a></td><td><a href="ghostacademy.html">Ghost Academy</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Mechanical Buildings</b></td><td><a href="factory.html">Factory</a></td><td><a href="starport.html">Starport</a></td><td><a href="armory.html">Armory</a></td><td><a href="fusioncore.html">Fusion Core</a></td>
+							</tr>
+						</table>
+						<table class="dropdowntable terrantable" border="0">
+							<tr>
+								<td><b>Add-ons/Spawned</b></td><td><a href="autoturret.html">Auto-Turret</a></td><td><a href="pdd.html">Point Defense Drone</a></td><td><a href="techlab.html">Tech Lab</a></td><td><a href="reactor.html">Reactor</a></td>
+							</tr>
+						</table><br /></p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer"> Copyright and shit </div>
+		</div>
+	</body>
+</html>

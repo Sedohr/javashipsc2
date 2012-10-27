@@ -1,0 +1,9 @@
+$('.topmenu li').hover(function () {
+var currentid = $(this).attr('id');
+$(this) menu() -> submenu(id).addClass('selected'), etc.
+
+hover over menu 1, opens up submenu 1. (keep submenu open*) Hover over sub^2menu 1, open up sub^3menu 1 (submenu & sub^2menu still open).
+
+hover over any 'menu', $('"header"').removeClass.('selected'), go on with rest of code.
+
+hover over any submenu li(sub^2menu) removeClass selected any children of menu/siblings of submenu li. addClass selected to $(this).hover. etc.
