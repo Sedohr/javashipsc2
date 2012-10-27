@@ -1,1 +1,1 @@
-Readme?
+This project originally started out with just testing dropdown menus in javascript, but I wanted to make a full website that actually uses it to also work on css, html, and jQuery. The website is basically a unit database for the game Starcraft 2, but all the information is hard coded into the website (for now <_<).
