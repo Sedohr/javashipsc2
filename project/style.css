@@ -561,6 +561,15 @@ ul.tabs li:active {
 	border-radius:5px;
 }
 
+.resizeimagesizeright4 {
+	width:15%;
+	height:15%;
+	float:right;
+	border:3px solid #707070;
+	margin:5px 5px 5px 15px;
+	border-radius:5px;
+}
+
 .content .dbarea .dblorepage {
 	display:none;
 }
